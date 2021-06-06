@@ -1,0 +1,10 @@
+C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.csprojAssemblyReference.cache
+C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Properties.Resources.resources
+C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.csproj.GenerateResource.cache
+C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.csproj.CoreCompileInputs.cache
+C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\bin\Debug\CourseSystem.exe.config
+C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\bin\Debug\CourseSystem.exe
+C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\bin\Debug\CourseSystem.pdb
+C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.exe
+C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.pdb
+C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Forms.BaseForm.resources
