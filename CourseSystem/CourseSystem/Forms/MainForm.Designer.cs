@@ -42,7 +42,7 @@ namespace CourseSystem.Forms
             this.AdminButton.Name = "AdminButton";
             this.AdminButton.Size = new System.Drawing.Size(163, 142);
             this.AdminButton.TabIndex = 0;
-            this.AdminButton.Load += new System.EventHandler(this.StudentButton_Load);
+            this.AdminButton.Click += new System.EventHandler(this.AdminButton_Click);
             // 
             // StudentButton
             // 
@@ -52,6 +52,7 @@ namespace CourseSystem.Forms
             this.StudentButton.Name = "StudentButton";
             this.StudentButton.Size = new System.Drawing.Size(163, 142);
             this.StudentButton.TabIndex = 1;
+            this.StudentButton.Click += new System.EventHandler(this.StudentButton_Click);
             // 
             // InstructorButton
             // 
@@ -61,6 +62,7 @@ namespace CourseSystem.Forms
             this.InstructorButton.Name = "InstructorButton";
             this.InstructorButton.Size = new System.Drawing.Size(163, 142);
             this.InstructorButton.TabIndex = 2;
+            this.InstructorButton.Click += new System.EventHandler(this.InstructorButton_Click);
             // 
             // MainForm
             // 
@@ -70,9 +72,9 @@ namespace CourseSystem.Forms
             this.Controls.Add(this.InstructorButton);
             this.Controls.Add(this.StudentButton);
             this.Controls.Add(this.AdminButton);
-            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.OnLoad);
             this.ResumeLayout(false);
 
         }

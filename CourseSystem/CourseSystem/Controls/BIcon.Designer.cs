@@ -49,6 +49,7 @@ namespace CourseSystem.Controls
             this.ForeColor = System.Drawing.Color.Transparent;
             this.Name = "BIcon";
             this.Size = new System.Drawing.Size(163, 142);
+            this.Load += new System.EventHandler(this.OnLoad);
             this.ResumeLayout(false);
 
         }

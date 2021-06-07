@@ -1,13 +1,13 @@
-{   
-    "attribution": {
-     
-        "student.png": "Icon made by Freepik from www.flaticon.com",
-	"admin.png": "Icon made by Freepik from www.flaticon.com",
-	"instructor.png": "Icon made by Freepik from www.flaticon.com",
-    },
+{
+  "attribution": {
 
-    "author": {
+    "student.png": "Icon made by Freepik from www.flaticon.com",
+    "admin.png": "Icon made by Freepik from www.flaticon.com",
+    "instructor.png": "Icon made by Freepik from www.flaticon.com",
+    "previous.png": "Icon made by Freepik from www.flaticon.com"
+  },
 
-        "Freepik": "https://www.flaticon.com/authors/freepik"
-    }
+  "author": {
+    "Freepik": "https://www.flaticon.com/authors/freepik"
+  }
 }

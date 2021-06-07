@@ -10,3 +10,4 @@ C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\
 C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Controls.BIcon.resources
 C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Forms.MainForm.resources
 C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Forms.BaseForm.resources
+C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Forms.LoginForm.resources
