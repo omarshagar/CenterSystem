@@ -16,7 +16,6 @@ namespace CourseSystem.Forms
         public BaseForm()
         {
             InitializeComponent();
-            CenterToScreen();
         }
 
         private void OnPaintBackground(object sender, PaintEventArgs eventArgs)
@@ -37,6 +36,8 @@ namespace CourseSystem.Forms
 
             // Paint         
             graphics.FillRectangle(brush, rect);
+
+            CenterToScreen();
         }
     }
 }
