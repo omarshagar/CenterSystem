@@ -32,3 +32,8 @@ C:\Users\Family\Desktop\DataBase_Project_Foulder\CenterSystem\CourseSystem\Cours
 C:\Users\Family\Desktop\DataBase_Project_Foulder\CenterSystem\CourseSystem\CourseSystem\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\Family\Desktop\DataBase_Project_Foulder\CenterSystem\CourseSystem\CourseSystem\bin\Debug\stdole.dll
 C:\Users\Family\Desktop\DataBase_Project_Foulder\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.ManageStudentForm.resources
+C:\Users\Family\Desktop\DataBase_Project_Foulder\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.UI.Check_Admin.resources
+C:\Users\Family\Desktop\DataBase_Project_Foulder\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Model.UserControlModels.Passwordtxt.resources
+C:\Users\Family\Desktop\DataBase_Project_Foulder\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Model.UserControlModels.UserNametxt.resources
+C:\Users\Family\Desktop\DataBase_Project_Foulder\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.LogIn.resources
+C:\Users\Family\Desktop\DataBase_Project_Foulder\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.ManageHallsForm.resources

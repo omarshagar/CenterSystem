@@ -36,5 +36,11 @@ namespace CourseSystem
             ManageStudentForm ms = new ManageStudentForm();
             ms.Show();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            ManageHallsForm mh = new ManageHallsForm();
+            mh.Show();
+        }
     }
 }

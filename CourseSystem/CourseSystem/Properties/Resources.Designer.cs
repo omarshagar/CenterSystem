@@ -83,6 +83,16 @@ namespace CourseSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hide25 {
+            get {
+                object obj = ResourceManager.GetObject("hide25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap study {
             get {
                 object obj = ResourceManager.GetObject("study", resourceCulture);
@@ -96,6 +106,16 @@ namespace CourseSystem.Properties {
         internal static System.Drawing.Bitmap teacher {
             get {
                 object obj = ResourceManager.GetObject("teacher", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visibility25 {
+            get {
+                object obj = ResourceManager.GetObject("visibility25", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

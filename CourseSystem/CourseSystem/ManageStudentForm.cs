@@ -15,7 +15,7 @@ namespace CourseSystem
     public partial class ManageStudentForm : Form
     {
         StudentReport SR;
-        string ordb = "Data Source = orcl; User Id =useromr; password= Administrator1;";
+        string ordb = "Data Source = localhost/orcl; User Id =useromr; password= Administrator1;";
         OracleConnection con;
         public ManageStudentForm()
         {

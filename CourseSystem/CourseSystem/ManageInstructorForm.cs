@@ -31,7 +31,7 @@ namespace CourseSystem
         private void ManageInstructorForm_Load(object sender, EventArgs e)
         {
             label1.Visible = false;
-            string constr = "Data Source = orcl; User Id =useromr; password= Administrator1;";
+            string constr = "Data Source =localhost/orcl; User Id =useromr; password= Administrator1;";
             string cmdstr = "select INSTRUCTOR_ID, firstname, lastname, username,  email, mobile_number from instructor";
 
             adapter = new OracleDataAdapter(cmdstr, constr);
@@ -60,6 +60,7 @@ namespace CourseSystem
 
         private void button2_Click(object sender, EventArgs e)
         {
+            flowLayoutPanel2.Controls.Clear();
             label1.Visible = true;
             popItems();
             
@@ -67,7 +68,7 @@ namespace CourseSystem
 
         private void popItems()
         {
-            string ordb = "Data Source = orcl; User Id =useromr; password= Administrator1;";
+            string ordb = "Data Source  =localhost/orcl; User Id =useromr; password= Administrator1;";
             OracleConnection con = new OracleConnection(ordb);
             con.Open();
             OracleCommand cmd = new OracleCommand();
@@ -81,6 +82,7 @@ namespace CourseSystem
             adapter.Fill(dt);
             count = dt.Rows.Count;
             UserControl1[] uc = new UserControl1[count];
+            
             for(int i = 0; i < count; i++)
             {
                 uc[i] = new UserControl1();
