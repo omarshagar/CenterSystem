@@ -11,3 +11,17 @@ C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\
 C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Forms.MainForm.resources
 C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Forms.BaseForm.resources
 C:\Users\mohamed\Desktop\DatabaseProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Forms.LoginForm.resources
+C:\Users\omars\Desktop\DbProject\CenterSystem\CourseSystem\CourseSystem\bin\Debug\CourseSystem.exe.config
+C:\Users\omars\Desktop\DbProject\CenterSystem\CourseSystem\CourseSystem\bin\Debug\CourseSystem.exe
+C:\Users\omars\Desktop\DbProject\CenterSystem\CourseSystem\CourseSystem\bin\Debug\CourseSystem.pdb
+C:\Users\omars\Desktop\DbProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.csprojAssemblyReference.cache
+C:\Users\omars\Desktop\DbProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Controls.BIcon.resources
+C:\Users\omars\Desktop\DbProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Forms.BaseForm.resources
+C:\Users\omars\Desktop\DbProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Forms.LoginForm.resources
+C:\Users\omars\Desktop\DbProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Forms.MainForm.resources
+C:\Users\omars\Desktop\DbProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Forms.RegisterForm.resources
+C:\Users\omars\Desktop\DbProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Properties.Resources.resources
+C:\Users\omars\Desktop\DbProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.csproj.GenerateResource.cache
+C:\Users\omars\Desktop\DbProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.csproj.CoreCompileInputs.cache
+C:\Users\omars\Desktop\DbProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.exe
+C:\Users\omars\Desktop\DbProject\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.pdb

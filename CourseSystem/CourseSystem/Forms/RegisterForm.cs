@@ -16,5 +16,10 @@ namespace CourseSystem.Forms
         {
             InitializeComponent();
         }
+
+        private void OnLoad(object sender, EventArgs e)
+        {
+            submit.IconPath = ResManager.Icon("submit.png");
+        }
     }
 }
