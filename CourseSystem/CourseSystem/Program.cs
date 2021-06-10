@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace CourseSystem
 {
     static class Program
@@ -16,7 +17,7 @@ namespace CourseSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LogIn());
+            Application.Run(new Forms.MainForm());
         }
     }
 }

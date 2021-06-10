@@ -16,7 +16,8 @@ namespace CourseSystem
     public partial class LogIn : Form
     {
         char option;
-        string ordb = "Data Source = localhost/orcl; User Id =useromr; password= Administrator1;";
+        // string ordb = "Data Source = localhost/orcl; User Id =useromr; password= Administrator1;";
+        string ordb = "Data Source = orcl4; User Id = Hr; password= hr;";
         OracleConnection con;
         public LogIn()
         {

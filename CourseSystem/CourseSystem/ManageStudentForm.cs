@@ -16,6 +16,7 @@ namespace CourseSystem
     {
         StudentReport SR;
         string ordb = "Data Source = localhost/orcl; User Id =useromr; password= Administrator1;";
+        //string ordb = "Data Source = orcl4; User Id =Hr; password= hr;";
         OracleConnection con;
         public ManageStudentForm()
         {

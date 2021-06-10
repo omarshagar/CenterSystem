@@ -31,7 +31,8 @@ namespace CourseSystem
         private void ManageInstructorForm_Load(object sender, EventArgs e)
         {
             label1.Visible = false;
-            string constr = "Data Source =localhost/orcl; User Id =useromr; password= Administrator1;";
+             string constr = "Data Source =localhost/orcl; User Id =useromr; password= Administrator1;";
+            //string constr = "Data Source = orcl4; User Id =Hr; password= hr;";
             string cmdstr = "select INSTRUCTOR_ID, firstname, lastname, username,  email, mobile_number from instructor";
 
             adapter = new OracleDataAdapter(cmdstr, constr);
