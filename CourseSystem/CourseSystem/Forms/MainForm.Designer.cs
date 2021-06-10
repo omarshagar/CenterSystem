@@ -38,7 +38,7 @@ namespace CourseSystem.Forms
             // 
             this.AdminButton.BackColor = System.Drawing.Color.Transparent;
             this.AdminButton.ForeColor = System.Drawing.Color.Transparent;
-            this.AdminButton.Location = new System.Drawing.Point(58, 144);
+            this.AdminButton.Location = new System.Drawing.Point(49, 144);
             this.AdminButton.Name = "AdminButton";
             this.AdminButton.Size = new System.Drawing.Size(163, 142);
             this.AdminButton.TabIndex = 0;
@@ -57,6 +57,7 @@ namespace CourseSystem.Forms
             // InstructorButton
             // 
             this.InstructorButton.BackColor = System.Drawing.Color.Transparent;
+            this.InstructorButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.InstructorButton.ForeColor = System.Drawing.Color.Transparent;
             this.InstructorButton.Location = new System.Drawing.Point(578, 144);
             this.InstructorButton.Name = "InstructorButton";
@@ -75,6 +76,9 @@ namespace CourseSystem.Forms
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.OnLoad);
+            this.Controls.SetChildIndex(this.AdminButton, 0);
+            this.Controls.SetChildIndex(this.StudentButton, 0);
+            this.Controls.SetChildIndex(this.InstructorButton, 0);
             this.ResumeLayout(false);
 
         }

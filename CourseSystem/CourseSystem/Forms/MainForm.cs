@@ -6,11 +6,11 @@ namespace CourseSystem.Forms
 {
     public partial class MainForm : BaseForm
     {
-        public MainForm(string form_key)
+        public MainForm()
         {
             InitializeComponent();
 
-            this.AddNewForm(form_key, this);
+            //this.AddNewForm(form_key, this);
         }
 
 
@@ -23,23 +23,19 @@ namespace CourseSystem.Forms
 
         private void AdminButton_Click(object sender, EventArgs e)
         {
-            this.AddNewForm("admin_login", new LoginForm());
-
-            this.ShowFormByKey("admin_login", true);
+            
         }
 
         private void StudentButton_Click(object sender, EventArgs e)
         {
-            this.AddNewForm("student_login", new LoginForm());
-
-            this.ShowFormByKey("student_login", true);
+            RegisterForm rg = new RegisterForm('s');
+            rg.ShowDialog();
         }
 
         private void InstructorButton_Click(object sender, EventArgs e)
         {
-            this.AddNewForm("instructor_login", new LoginForm());
-
-            this.ShowFormByKey("instructor_login", true);
+            RegisterForm rg = new RegisterForm('i');
+            rg.ShowDialog();
         }
     }
 }
