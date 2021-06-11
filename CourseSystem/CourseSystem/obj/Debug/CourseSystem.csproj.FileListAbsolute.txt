@@ -1,0 +1,16 @@
+C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\bin\Debug\CourseSystem.exe.config
+C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\bin\Debug\CourseSystem.exe
+C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\bin\Debug\CourseSystem.pdb
+C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\bin\Debug\Guna.UI.dll
+C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\bin\Debug\Oracle.DataAccess.dll
+C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.courses_not_enrollment_form.resources
+C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Enrollment_form.resources
+C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.main_form.resources
+C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Properties.Resources.resources
+C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.UserControl1.resources
+C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.csproj.GenerateResource.cache
+C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.csproj.CoreCompileInputs.cache
+C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.csproj.CopyComplete
+C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.exe
+C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.pdb
+C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.csprojAssemblyReference.cache
