@@ -8,7 +8,6 @@ C:\Users\El-feky\source\repos\FekyTask\FekyTask\bin\Debug\FekyTask.pdb
 C:\Users\El-feky\source\repos\FekyTask\FekyTask\obj\Debug\FekyTask.exe
 C:\Users\El-feky\source\repos\FekyTask\FekyTask\obj\Debug\FekyTask.pdb
 C:\Users\El-feky\source\repos\FekyTask\FekyTask\obj\Debug\FekyTask.Forms.Information.resources
-C:\Users\El-feky\source\repos\FekyTask\FekyTask\obj\Debug\FekyTask.Form1.resources
 C:\Users\El-feky\source\repos\FekyTask\FekyTask\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 C:\Users\El-feky\source\repos\FekyTask\FekyTask\bin\Debug\CrystalDecisions.ReportSource.dll
 C:\Users\El-feky\source\repos\FekyTask\FekyTask\bin\Debug\CrystalDecisions.Shared.dll
@@ -30,3 +29,6 @@ C:\Users\El-feky\source\repos\FekyTask\FekyTask\bin\Debug\AxShockwaveFlashObject
 C:\Users\El-feky\source\repos\FekyTask\FekyTask\bin\Debug\CrystalDecisions.Windows.Forms.dll
 C:\Users\El-feky\source\repos\FekyTask\FekyTask\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\El-feky\source\repos\FekyTask\FekyTask\obj\Debug\FekyTask.Forms.CourseInfo.resources
+C:\Users\El-feky\source\repos\FekyTask\FekyTask\bin\Debug\Oracle.DataAccess.dll
+C:\Users\El-feky\source\repos\FekyTask\FekyTask\obj\Debug\FekyTask.Forms.AddNewCourse.resources
+C:\Users\El-feky\source\repos\FekyTask\FekyTask\obj\Debug\FekyTask.InsturctorForm.resources

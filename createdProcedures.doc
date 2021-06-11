@@ -1,0 +1,27 @@
+------ first one
+create or replace
+PROCEDURE NEXTSESSION
+( instID IN NUMBER
+, nextDate OUT sys_refcursor
+) AS
+BEGIN
+  open nextdate for 
+  select Session_date, start_hour 
+  from  sessions
+  where session_date >= current_date and course_id = (SELECT cs.course_id 
+                    FROM course cs
+                    WHERE cs.course_id = 1);
+END NEXTSESSION;
+
+----second
+
+create or replace
+PROCEDURE INSTRUCTORCOURSES
+( ID IN NUMBER
+, Course OUT SYS_REFCURSOR
+) AS
+BEGIN
+  open course for 
+  SELECT cs.COURSE_NAME from course cs
+  where ID = cs.INSTRUCTOR_ID;
+END INSTRUCTORCOURSES;

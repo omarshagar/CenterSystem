@@ -29,11 +29,12 @@ namespace FekyTask.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.crystle = new System.Windows.Forms.Panel();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.label1 = new System.Windows.Forms.Label();
-            this.EnterBTN = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CoursesBox = new System.Windows.Forms.ComboBox();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.crystle.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,38 +75,33 @@ namespace FekyTask.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 21);
+            this.label1.Location = new System.Drawing.Point(55, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 31);
+            this.label1.Size = new System.Drawing.Size(207, 31);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Course Name";
+            this.label1.Text = "Courses Name";
             // 
-            // EnterBTN
+            // CoursesBox
             // 
-            this.EnterBTN.Location = new System.Drawing.Point(727, 21);
-            this.EnterBTN.Name = "EnterBTN";
-            this.EnterBTN.Size = new System.Drawing.Size(142, 37);
-            this.EnterBTN.TabIndex = 5;
-            this.EnterBTN.Text = "Enter Course";
-            this.EnterBTN.UseVisualStyleBackColor = true;
-            this.EnterBTN.Click += new System.EventHandler(this.EnterBTN_Click);
+            this.CoursesBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CoursesBox.FormattingEnabled = true;
+            this.CoursesBox.Location = new System.Drawing.Point(352, 21);
+            this.CoursesBox.Name = "CoursesBox";
+            this.CoursesBox.Size = new System.Drawing.Size(476, 37);
+            this.CoursesBox.TabIndex = 6;
+            this.CoursesBox.SelectedIndexChanged += new System.EventHandler(this.CoursesBox_SelectedIndexChanged);
             // 
-            // comboBox1
+            // notifyIcon1
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(252, 21);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(342, 37);
-            this.comboBox1.TabIndex = 6;
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
             // 
             // CourseInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1076, 634);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.EnterBTN);
+            this.Controls.Add(this.CoursesBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.crystle);
             this.Name = "CourseInfo";
@@ -121,7 +117,7 @@ namespace FekyTask.Forms
         private System.Windows.Forms.Panel crystle;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button EnterBTN;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CoursesBox;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
