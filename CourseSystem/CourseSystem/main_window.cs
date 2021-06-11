@@ -17,8 +17,9 @@ namespace CourseSystem
     {
         
         ///  connection to database 
-         string ordb = "Data Source=ORCL;User Id=hr;Password=hr;";
-         OracleConnection con;
+         //string ordb = "Data Source=ORCL;User Id=hr;Password=hr;";
+        string ordb = "Data Source=orcl4;User Id=scott;Password=tiger;";
+        OracleConnection con;
          OracleDataAdapter adapter;
          OracleDataAdapter adapter2;
 

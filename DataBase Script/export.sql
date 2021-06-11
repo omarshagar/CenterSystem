@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  File created - Thursday-June-03-2021   
+--  File created - Friday-June-11-2021   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Sequence ACTID
@@ -86,9 +86,7 @@
 	"HIREDATE" DATE, 
 	"SAL" NUMBER(7,2), 
 	"COMM" NUMBER(7,2), 
-	"DEPTNO" NUMBER(2,0), 
-	"SKILLS" CHAR(3), 
-	"GENDER" CHAR(1)
+	"DEPTNO" NUMBER(2,0)
    ) ;
 --------------------------------------------------------
 --  DDL for Table EMPLOYEES
@@ -230,91 +228,6 @@
    ) ;
 
 ---------------------------------------------------
---   DATA FOR TABLE STUDENT
---   FILTER = none used
----------------------------------------------------
-REM INSERTING into STUDENT
-Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (22,'ff','ff','ff','ff',55,123456789,'ff');
-Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (3,'Omar','Shreet','omar.btw@hotnailc,om','123',520,101029327,'OmarShreet');
-Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (0,'Omar','Monem','whatever','123',400,1010,'omr2000');
-Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (2,'Hassan','Hassan','whateverlol','123',2000,1928,'Omar2000');
-
----------------------------------------------------
---   END DATA FOR TABLE STUDENT
----------------------------------------------------
-
----------------------------------------------------
---   DATA FOR TABLE ACTORS
---   FILTER = none used
----------------------------------------------------
-REM INSERTING into ACTORS
-
----------------------------------------------------
---   END DATA FOR TABLE ACTORS
----------------------------------------------------
-
----------------------------------------------------
---   DATA FOR TABLE FILMTITLES
---   FILTER = none used
----------------------------------------------------
-REM INSERTING into FILMTITLES
-
----------------------------------------------------
---   END DATA FOR TABLE FILMTITLES
----------------------------------------------------
-
----------------------------------------------------
---   DATA FOR TABLE INSTRUCTOR
---   FILTER = none used
----------------------------------------------------
-REM INSERTING into INSTRUCTOR
-Insert into INSTRUCTOR (INSTRCUTOR_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (1,'Ahmed','Salah','tatata','111111',3000,10101010101,null);
-
----------------------------------------------------
---   END DATA FOR TABLE INSTRUCTOR
----------------------------------------------------
-
----------------------------------------------------
---   DATA FOR TABLE FILMACTORS
---   FILTER = none used
----------------------------------------------------
-REM INSERTING into FILMACTORS
-
----------------------------------------------------
---   END DATA FOR TABLE FILMACTORS
----------------------------------------------------
-
----------------------------------------------------
---   DATA FOR TABLE FILMCOPIES
---   FILTER = none used
----------------------------------------------------
-REM INSERTING into FILMCOPIES
-
----------------------------------------------------
---   END DATA FOR TABLE FILMCOPIES
----------------------------------------------------
-
----------------------------------------------------
---   DATA FOR TABLE ENROLLMENT
---   FILTER = none used
----------------------------------------------------
-REM INSERTING into ENROLLMENT
-
----------------------------------------------------
---   END DATA FOR TABLE ENROLLMENT
----------------------------------------------------
-
----------------------------------------------------
---   DATA FOR TABLE SALGRADE
---   FILTER = none used
----------------------------------------------------
-REM INSERTING into SALGRADE
-
----------------------------------------------------
---   END DATA FOR TABLE SALGRADE
----------------------------------------------------
-
----------------------------------------------------
 --   DATA FOR TABLE EMPLOYEES
 --   FILTER = none used
 ---------------------------------------------------
@@ -322,6 +235,19 @@ REM INSERTING into EMPLOYEES
 
 ---------------------------------------------------
 --   END DATA FOR TABLE EMPLOYEES
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE ENROLLMENT
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into ENROLLMENT
+Insert into ENROLLMENT (STUDNET_ID,COURSE_ID) values (3,1);
+Insert into ENROLLMENT (STUDNET_ID,COURSE_ID) values (3,2);
+Insert into ENROLLMENT (STUDNET_ID,COURSE_ID) values (3,3);
+
+---------------------------------------------------
+--   END DATA FOR TABLE ENROLLMENT
 ---------------------------------------------------
 
 ---------------------------------------------------
@@ -335,6 +261,27 @@ REM INSERTING into BONUS
 ---------------------------------------------------
 
 ---------------------------------------------------
+--   DATA FOR TABLE FILMCOPIES
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into FILMCOPIES
+
+---------------------------------------------------
+--   END DATA FOR TABLE FILMCOPIES
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE INSTRUCTOR
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into INSTRUCTOR
+Insert into INSTRUCTOR (INSTRCUTOR_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (1,'Ahmed','Salah','tatata','111111',3322,10101010101,null);
+
+---------------------------------------------------
+--   END DATA FOR TABLE INSTRUCTOR
+---------------------------------------------------
+
+---------------------------------------------------
 --   DATA FOR TABLE RENTALS
 --   FILTER = none used
 ---------------------------------------------------
@@ -345,15 +292,32 @@ REM INSERTING into RENTALS
 ---------------------------------------------------
 
 ---------------------------------------------------
---   DATA FOR TABLE COURSE
+--   DATA FOR TABLE SALGRADE
 --   FILTER = none used
 ---------------------------------------------------
-REM INSERTING into COURSE
-Insert into COURSE (COURSE_ID,COURSE_NAME,COST,DURATION_OF_ONE_SESSION,NUM_OF_STUDENTS,NUMBER_OF_SESSIONS,INSTRUCTOR_ID,START_DATE,END_DATE) values (2,'Math',300,2,80,4,1,to_timestamp('12-AUG-21 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),to_timestamp('12-SEP-21 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'));
-Insert into COURSE (COURSE_ID,COURSE_NAME,COST,DURATION_OF_ONE_SESSION,NUM_OF_STUDENTS,NUMBER_OF_SESSIONS,INSTRUCTOR_ID,START_DATE,END_DATE) values (1,'gg',2,1,50,2,1,to_timestamp('10-AUG-21 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),to_timestamp('10-SEP-21 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'));
+REM INSERTING into SALGRADE
+Insert into SALGRADE (GRADE,LOSAL,HISAL) values (1,700,1200);
+Insert into SALGRADE (GRADE,LOSAL,HISAL) values (2,1201,1400);
+Insert into SALGRADE (GRADE,LOSAL,HISAL) values (3,1401,2000);
+Insert into SALGRADE (GRADE,LOSAL,HISAL) values (4,2001,3000);
+Insert into SALGRADE (GRADE,LOSAL,HISAL) values (5,3001,9999);
 
 ---------------------------------------------------
---   END DATA FOR TABLE COURSE
+--   END DATA FOR TABLE SALGRADE
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE STUDENT
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into STUDENT
+Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (22,'ff','ff','ff','ff',55,123456789,'ff');
+Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (3,'Omar','Shreet','omar.btw@hotnailc,om','123',198,101029327,'OmarShreet');
+Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (0,'Omar','Monem','whatever','123',400,1010,'omr2000');
+Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (2,'Hassan','Hassan','whateverlol','123',2000,1928,'Omar2000');
+
+---------------------------------------------------
+--   END DATA FOR TABLE STUDENT
 ---------------------------------------------------
 
 ---------------------------------------------------
@@ -361,6 +325,12 @@ Insert into COURSE (COURSE_ID,COURSE_NAME,COST,DURATION_OF_ONE_SESSION,NUM_OF_ST
 --   FILTER = none used
 ---------------------------------------------------
 REM INSERTING into FILMCATEGORY
+Insert into FILMCATEGORY (CATEGORYID,CATEGORYNAME) values (1,'Adventure');
+Insert into FILMCATEGORY (CATEGORYID,CATEGORYNAME) values (2,'Comedy');
+Insert into FILMCATEGORY (CATEGORYID,CATEGORYNAME) values (3,'Action');
+Insert into FILMCATEGORY (CATEGORYID,CATEGORYNAME) values (4,'Animation');
+Insert into FILMCATEGORY (CATEGORYID,CATEGORYNAME) values (5,'Fantasy');
+Insert into FILMCATEGORY (CATEGORYID,CATEGORYNAME) values (6,'Sci-Fi');
 
 ---------------------------------------------------
 --   END DATA FOR TABLE FILMCATEGORY
@@ -378,10 +348,89 @@ Insert into HALL (HALL_NUM,CAPACITY) values (1,30);
 ---------------------------------------------------
 
 ---------------------------------------------------
+--   DATA FOR TABLE ACTORS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into ACTORS
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (1,'Kristen Stewart','F');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (2,'Robert Pattinson','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (3,'Taylor Lautner','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (4,'Rupert Grint','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (5,'Daniel Radcliffe','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (6,'Ra65lph Fien555nes','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (7,'Hank Azariah','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (8,'Neil Patrick','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (9,'Jayma Mays','F');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (10,'Sofia Vergara','F');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (11,'John Cleese','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (12,'Jim Cummings','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (13,'Bud Luckey','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (14,'Tom Hanks','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (15,'Tim Allen','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (16,'Joan Cusack','F');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (17,'Mike Myers','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (18,'Eddie Murdfyhphy','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (19,'Cameron Diaz','F');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (20,'Kevin James','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (21,'Salma Hayek','F');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (22,'Henry Winkler','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (23,'Matthew McConaughey','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (24,'Anne Hathaway','F');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (25,'Jessica Chastain','F');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (26,'Sandra Bullock','F');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (27,'George Clooney','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (28,'Will Smith','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (29,'Tommy Lee Jones','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (30,'7a7a2','M');
+Insert into ACTORS (ACTORID,ACTORNAME,GENDER) values (31,'Bud Luckey','M');
+
+---------------------------------------------------
+--   END DATA FOR TABLE ACTORS
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE EMP
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into EMP
+Insert into EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7369,'SMITH','CLERK',7902,to_timestamp('17-DEC-80 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),800,null,20);
+Insert into EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7499,'ALLEN','SALESMAN',7698,to_timestamp('20-FEB-81 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),1600,300,30);
+Insert into EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7521,'WARD','SALESMAN',7698,to_timestamp('22-FEB-81 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),1250,500,30);
+Insert into EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7566,'JONES','MANAGER',7839,to_timestamp('02-APR-81 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),2975,null,20);
+Insert into EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7654,'MARTIN','SALESMAN',7698,to_timestamp('28-SEP-81 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),1250,1400,30);
+Insert into EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7698,'BLAKE','MANAGER',7839,to_timestamp('01-MAY-81 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),2850,null,30);
+Insert into EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7782,'CLARK','MANAGER',7839,to_timestamp('09-JUN-81 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),2450,null,10);
+Insert into EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7788,'SCOTT','ANALYST',7566,to_timestamp('19-APR-87 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),3000,null,20);
+Insert into EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7839,'KING','PRESIDENT',null,to_timestamp('17-NOV-81 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),5000,null,10);
+Insert into EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7844,'TURNER','SALESMAN',7698,to_timestamp('08-SEP-81 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),1500,0,30);
+Insert into EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7876,'ADAMS','CLERK',7788,to_timestamp('23-MAY-87 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),1100,null,20);
+Insert into EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7900,'JAMES','CLERK',7698,to_timestamp('03-DEC-81 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),950,null,30);
+Insert into EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7902,'FORD','ANALYST',7566,to_timestamp('03-DEC-81 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),3000,null,20);
+Insert into EMP (EMPNO,ENAME,JOB,MGR,HIREDATE,SAL,COMM,DEPTNO) values (7934,'MILLER','CLERK',7782,to_timestamp('23-JAN-82 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),1300,null,10);
+
+---------------------------------------------------
+--   END DATA FOR TABLE EMP
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE MEMBERS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into MEMBERS
+
+---------------------------------------------------
+--   END DATA FOR TABLE MEMBERS
+---------------------------------------------------
+
+---------------------------------------------------
 --   DATA FOR TABLE DEPT
 --   FILTER = none used
 ---------------------------------------------------
 REM INSERTING into DEPT
+Insert into DEPT (DEPTNO,DNAME,LOC) values (10,'ACCOUNTING','NEW YORK');
+Insert into DEPT (DEPTNO,DNAME,LOC) values (20,'RESEARCH','DALLAS');
+Insert into DEPT (DEPTNO,DNAME,LOC) values (30,'SALES','CHICAGO');
+Insert into DEPT (DEPTNO,DNAME,LOC) values (40,'OPERATIONS','BOSTON');
 
 ---------------------------------------------------
 --   END DATA FOR TABLE DEPT
@@ -447,29 +496,88 @@ Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) val
 Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) values (64,1,1,3,to_timestamp('24-AUG-21 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'));
 Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) values (65,1,1,3,to_timestamp('31-AUG-21 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'));
 Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) values (66,1,1,3,to_timestamp('07-SEP-21 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'));
+Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) values (90,3,1,4,to_timestamp('31-AUG-21 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'));
 
 ---------------------------------------------------
 --   END DATA FOR TABLE SESSIONS
 ---------------------------------------------------
 
 ---------------------------------------------------
---   DATA FOR TABLE EMP
+--   DATA FOR TABLE FILMTITLES
 --   FILTER = none used
 ---------------------------------------------------
-REM INSERTING into EMP
+REM INSERTING into FILMTITLES
+Insert into FILMTITLES (FILMID,FILMTITLE,RELEASEDATE,FILMDURATION,FILMCATEGORYID) values (1,'The Twilight Saga Breaking Dawn',to_timestamp('16-NOV-12 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),116,1);
+Insert into FILMTITLES (FILMID,FILMTITLE,RELEASEDATE,FILMDURATION,FILMCATEGORYID) values (2,'Harry Potter and the Deathly Hallows',to_timestamp('15-JUL-11 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),130,5);
+Insert into FILMTITLES (FILMID,FILMTITLE,RELEASEDATE,FILMDURATION,FILMCATEGORYID) values (3,'The Smurfs',to_timestamp('29-JUL-11 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),103,4);
+Insert into FILMTITLES (FILMID,FILMTITLE,RELEASEDATE,FILMDURATION,FILMCATEGORYID) values (4,'Winnie the Pooh',to_timestamp('15-JUL-11 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),63,4);
+Insert into FILMTITLES (FILMID,FILMTITLE,RELEASEDATE,FILMDURATION,FILMCATEGORYID) values (5,'The Twilight Saga: Eclipse',to_timestamp('30-JUN-10 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),124,1);
+Insert into FILMTITLES (FILMID,FILMTITLE,RELEASEDATE,FILMDURATION,FILMCATEGORYID) values (6,'Toy Story 3',to_timestamp('18-JUN-10 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),103,4);
+Insert into FILMTITLES (FILMID,FILMTITLE,RELEASEDATE,FILMDURATION,FILMCATEGORYID) values (7,'Shrek Forever After',to_timestamp('21-MAY-10 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),93,4);
+Insert into FILMTITLES (FILMID,FILMTITLE,RELEASEDATE,FILMDURATION,FILMCATEGORYID) values (8,'Here Comes the Boom',to_timestamp('12-OCT-12 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),105,2);
+Insert into FILMTITLES (FILMID,FILMTITLE,RELEASEDATE,FILMDURATION,FILMCATEGORYID) values (9,'Interstellar',to_timestamp('07-NOV-14 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),169,6);
+Insert into FILMTITLES (FILMID,FILMTITLE,RELEASEDATE,FILMDURATION,FILMCATEGORYID) values (10,'Gravity',to_timestamp('04-OCT-13 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),90,6);
+Insert into FILMTITLES (FILMID,FILMTITLE,RELEASEDATE,FILMDURATION,FILMCATEGORYID) values (11,'Miss Congeniality',to_timestamp('22-DEC-02 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),109,2);
+Insert into FILMTITLES (FILMID,FILMTITLE,RELEASEDATE,FILMDURATION,FILMCATEGORYID) values (12,'Men in Black 3',to_timestamp('25-MAY-12 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),107,3);
 
 ---------------------------------------------------
---   END DATA FOR TABLE EMP
+--   END DATA FOR TABLE FILMTITLES
 ---------------------------------------------------
 
 ---------------------------------------------------
---   DATA FOR TABLE MEMBERS
+--   DATA FOR TABLE COURSE
 --   FILTER = none used
 ---------------------------------------------------
-REM INSERTING into MEMBERS
+REM INSERTING into COURSE
+Insert into COURSE (COURSE_ID,COURSE_NAME,COST,DURATION_OF_ONE_SESSION,NUM_OF_STUDENTS,NUMBER_OF_SESSIONS,INSTRUCTOR_ID,START_DATE,END_DATE) values (2,'Math',300,2,81,4,1,to_timestamp('12-AUG-21 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),to_timestamp('12-SEP-21 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'));
+Insert into COURSE (COURSE_ID,COURSE_NAME,COST,DURATION_OF_ONE_SESSION,NUM_OF_STUDENTS,NUMBER_OF_SESSIONS,INSTRUCTOR_ID,START_DATE,END_DATE) values (1,'gg',2,1,51,2,1,to_timestamp('10-AUG-21 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),to_timestamp('10-SEP-21 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'));
+Insert into COURSE (COURSE_ID,COURSE_NAME,COST,DURATION_OF_ONE_SESSION,NUM_OF_STUDENTS,NUMBER_OF_SESSIONS,INSTRUCTOR_ID,START_DATE,END_DATE) values (3,'de7k',5,1,9,5,1,to_timestamp('11-JUN-21 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'),to_timestamp('11-JUN-21 00.00.00.000000000','DD-MON-RR HH24.MI.SS.FF'));
 
 ---------------------------------------------------
---   END DATA FOR TABLE MEMBERS
+--   END DATA FOR TABLE COURSE
+---------------------------------------------------
+
+---------------------------------------------------
+--   DATA FOR TABLE FILMACTORS
+--   FILTER = none used
+---------------------------------------------------
+REM INSERTING into FILMACTORS
+Insert into FILMACTORS (FILMID,ACTORID) values (1,1);
+Insert into FILMACTORS (FILMID,ACTORID) values (1,2);
+Insert into FILMACTORS (FILMID,ACTORID) values (1,3);
+Insert into FILMACTORS (FILMID,ACTORID) values (2,4);
+Insert into FILMACTORS (FILMID,ACTORID) values (2,5);
+Insert into FILMACTORS (FILMID,ACTORID) values (2,6);
+Insert into FILMACTORS (FILMID,ACTORID) values (3,7);
+Insert into FILMACTORS (FILMID,ACTORID) values (3,8);
+Insert into FILMACTORS (FILMID,ACTORID) values (3,9);
+Insert into FILMACTORS (FILMID,ACTORID) values (3,10);
+Insert into FILMACTORS (FILMID,ACTORID) values (4,11);
+Insert into FILMACTORS (FILMID,ACTORID) values (4,12);
+Insert into FILMACTORS (FILMID,ACTORID) values (4,13);
+Insert into FILMACTORS (FILMID,ACTORID) values (5,1);
+Insert into FILMACTORS (FILMID,ACTORID) values (5,2);
+Insert into FILMACTORS (FILMID,ACTORID) values (5,3);
+Insert into FILMACTORS (FILMID,ACTORID) values (6,14);
+Insert into FILMACTORS (FILMID,ACTORID) values (6,15);
+Insert into FILMACTORS (FILMID,ACTORID) values (6,16);
+Insert into FILMACTORS (FILMID,ACTORID) values (7,17);
+Insert into FILMACTORS (FILMID,ACTORID) values (7,18);
+Insert into FILMACTORS (FILMID,ACTORID) values (7,19);
+Insert into FILMACTORS (FILMID,ACTORID) values (8,20);
+Insert into FILMACTORS (FILMID,ACTORID) values (8,21);
+Insert into FILMACTORS (FILMID,ACTORID) values (8,22);
+Insert into FILMACTORS (FILMID,ACTORID) values (9,23);
+Insert into FILMACTORS (FILMID,ACTORID) values (9,24);
+Insert into FILMACTORS (FILMID,ACTORID) values (9,25);
+Insert into FILMACTORS (FILMID,ACTORID) values (10,26);
+Insert into FILMACTORS (FILMID,ACTORID) values (10,27);
+Insert into FILMACTORS (FILMID,ACTORID) values (11,26);
+Insert into FILMACTORS (FILMID,ACTORID) values (12,27);
+Insert into FILMACTORS (FILMID,ACTORID) values (12,28);
+
+---------------------------------------------------
+--   END DATA FOR TABLE FILMACTORS
 ---------------------------------------------------
 --------------------------------------------------------
 --  Constraints for Table ACTORS
@@ -758,45 +866,6 @@ REM INSERTING into MEMBERS
 	  REFERENCES "HALL" ("HALL_NUM") ENABLE;
 
 --------------------------------------------------------
---  DDL for View MGV_ALL_CAPTURED_SQL
---------------------------------------------------------
-
-  CREATE OR REPLACE VIEW "MGV_ALL_CAPTURED_SQL" ("ID", "OBJTYPE", "OBJECTNAME", "NATIVE_SQL") AS 
-  WITH
-captured_schema AS
-(SELECT SCHEMA_ID
-   FROM mgv_all_schema
-  WHERE connection_id IN
-  (SELECT ID FROM md_connections WHERE NVL(type,'Captured') != 'CONVERTED')),
-captured_connections AS
-(SELECT ID FROM md_connections WHERE NVL(type,'Captured') != 'CONVERTED') ,
-captured_view_trigger AS
-(SELECT v.trigger_id vt
-   FROM mgv_all_view_triggers v
-  WHERE v.connection_id IN
-  (SELECT * FROM captured_connections)) ,
-captured_table_trigger AS
-(SELECT t.trigger_id tt
-   FROM mgv_all_table_triggers t
-  WHERE t.connection_id IN
-  (SELECT * FROM captured_connections))
-SELECT ID,'md_stored_programs' ObjType, Name objectName, native_sql
- FROM md_stored_programs,
-captured_schema
-WHERE language = 'MSTSQL'
-  AND SCHEMA_ID_FK = captured_schema.schema_id
-UNION ALL
-SELECT ID,'md_views' ObjType, view_Name objectName, native_sql
- FROM md_views,
-captured_schema
-WHERE language = 'MSTSQL'
-  AND SCHEMA_ID_FK = captured_schema.schema_id
-UNION ALL
-SELECT ID,'md_triggers' ObjType, trigger_Name objectName, native_sql
- FROM md_triggers
-WHERE language = 'MSTSQL'
-  AND (md_triggers.id in (select vt from captured_view_trigger union select tt from captured_table_trigger  ));
---------------------------------------------------------
 --  DDL for Procedure ADD_SESSIONS_IN_INTERVAL
 --------------------------------------------------------
 set define off;
@@ -832,7 +901,7 @@ end add_sessions_in_interval;
 --------------------------------------------------------
 set define off;
 
-  CREATE OR REPLACE PROCEDURE "CHECK_CONT_IN_INSTR" (SessionDay in Date ,starttime in sessions.start_hour%type,hallId in integer,inst_id in number ,sucess out integer )
+  CREATE OR REPLACE PROCEDURE "CHECK_CONT_IN_INSTR" (SessionDay in Date ,starttime in sessions.start_hour%type,hallId in integer,inst_id in number,courseid in number ,sucess out integer )
 is 
 curday Date ;
 tmp date;
@@ -840,7 +909,7 @@ enddate Date;
 beg Date;
 cnt INTEGER;
 begin
-select cc.start_date , cc.end_date  into tmp , enddate from course cc where cc.course_id=course_id;
+select cc.start_date , cc.end_date  into tmp , enddate from course cc where cc.course_id=courseid;
 curday:= sessionday;
 select greatest(sessionday, tmp) into curday  from dual;
 select greatest(curday, sysdate) into curday  from dual;
@@ -891,6 +960,24 @@ end check_cont_in_sessions;
 /
 
 --------------------------------------------------------
+--  DDL for Procedure CHECK_CONT_IN_STD
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE PROCEDURE "CHECK_CONT_IN_STD" (std_id in number,courseid in number ,sucess out integer )
+is 
+cnt INTEGER;
+begin
+sucess:=1;
+select count(s.session_id) into cnt from sessions s ,sessions R where r.course_id= courseid and s.course_id in ( select e.course_id from enrollment e where e.studnet_id= std_id) and  r.session_date= s.session_date and r.start_hour= s.start_hour  ; 
+   if cnt>0 then
+    sucess :=0;
+    end if;
+end check_cont_in_std;
+
+/
+
+--------------------------------------------------------
 --  DDL for Procedure GETCOPIES
 --------------------------------------------------------
 set define off;
@@ -902,6 +989,24 @@ open cid for
 select fc.copyid
 from FILMCOPIES fc, filmtitles ft
 where fc.filmid = ft.filmid and ft.filmtitle = fti and fc.CurrentlyRented = 'n';
+end;
+
+/
+
+--------------------------------------------------------
+--  DDL for Procedure GETCOPYID
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE PROCEDURE "GETCOPYID" 
+(FTitle in varchar2 , CID out sys_refcursor)
+as
+begin
+open CID for
+select fc.CopyID
+from FilmCopies fc , FilmTitles F 
+where fc.FilmID = F.FilmID and fc.CurrentlyRented = 'n' and 
+F.FilmTitle = Ftitle ;
 end;
 
 /
@@ -962,6 +1067,23 @@ begin
 insert into rentals 
 (rentid, memberid, copyid, daterented, datedueback, rentalcost) values(rid, memid, cid, dentered, ddue, rcost); 
 end;
+
+/
+
+--------------------------------------------------------
+--  DDL for Procedure RETURN_ENROLLED_COURSES
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE PROCEDURE "RETURN_ENROLLED_COURSES" 
+(id number, cur out sys_refcursor)
+as
+begin
+open cur for
+select c.instructor_id, c.course_name 
+from course c,enrollment e
+where c.course_id = e.course_id and e.studnet_id=id;
+End ;
 
 /
 

@@ -22,7 +22,8 @@ namespace CourseSystem
 
         }
         //connection to database
-        string ordb = "Data Source=ORCL;User Id=hr;Password=hr;";
+        string ordb = "Data Source=orcl4;User Id=scott;Password=tiger;";
+        //string ordb = "Data Source=ORCL;User Id=hr;Password=hr;";
         OracleConnection con;
         OracleDataAdapter adapter;
         
@@ -176,6 +177,26 @@ namespace CourseSystem
             DialogResult dial = MessageBox.Show("Are you sure that you want to enroll in this course ?", "Enroll", MessageBoxButtons.YesNo);
             if (dial == DialogResult.Yes)
             {
+
+                con = new OracleConnection(ordb);
+                con.Open();
+                OracleCommand cmd = new OracleCommand();
+                cmd.Connection = con;
+                cmd.CommandText = "CHECK_CONT_IN_STD";
+                cmd.CommandType = CommandType.StoredProcedure;
+                int ou = 0;
+                cmd.Parameters.Add("std_id", stud_id);
+                cmd.Parameters.Add("courseid", course_id);
+                cmd.Parameters.Add("sucess", OracleDbType.Int32, ParameterDirection.Output);
+                cmd.ExecuteNonQuery();
+                int suc = int.Parse(cmd.Parameters["sucess"].Value.ToString());
+                if (suc == 0)
+                {
+                    MessageBox.Show("This Course contradict with your previous tables");
+                    return;
+                }
+                con.Close();
+
 
                 DataTable info = new DataTable();
                 info = retreve_selectdata_from_database_one_bind("SELECT balance from student where student_id =:stud_id", stud_id);

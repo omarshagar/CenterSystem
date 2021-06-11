@@ -14,3 +14,17 @@ C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSyst
 C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.exe
 C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.pdb
 C:\Users\omerh\Desktop\taskofviewallcourses\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.csprojAssemblyReference.cache
+E:\CenterSystem\tmp\CenterSystem\CourseSystem\CourseSystem\bin\Debug\CourseSystem.exe.config
+E:\CenterSystem\tmp\CenterSystem\CourseSystem\CourseSystem\bin\Debug\CourseSystem.exe
+E:\CenterSystem\tmp\CenterSystem\CourseSystem\CourseSystem\bin\Debug\CourseSystem.pdb
+E:\CenterSystem\tmp\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.csprojAssemblyReference.cache
+E:\CenterSystem\tmp\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.courses_not_enrollment_form.resources
+E:\CenterSystem\tmp\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Enrollment_form.resources
+E:\CenterSystem\tmp\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.main_form.resources
+E:\CenterSystem\tmp\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Properties.Resources.resources
+E:\CenterSystem\tmp\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.UserControl1.resources
+E:\CenterSystem\tmp\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.csproj.GenerateResource.cache
+E:\CenterSystem\tmp\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.csproj.CoreCompileInputs.cache
+E:\CenterSystem\tmp\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.csproj.CopyComplete
+E:\CenterSystem\tmp\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.exe
+E:\CenterSystem\tmp\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.pdb
