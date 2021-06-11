@@ -204,37 +204,7 @@ namespace CourseSystem
 
             }
         }
-        // when student press cancell
-        private void gunaCircleButton2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-        public void gunaLineTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gunaLineTextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gunaLineTextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gunaLabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gunaLineTextBox1_TextChanged_1(object sender, EventArgs e)
         {
 
         }
@@ -243,6 +213,99 @@ namespace CourseSystem
         {
 
         }
-       
+
+        private void end_date_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void duration_of_one_session_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void num_of_student_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numofsessions_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void doctor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void course_name_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cost_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void save_Click(object sender, EventArgs e)
+        {
+            DialogResult dial = MessageBox.Show("Are you sure that you want to enroll in this course ?", "Enroll", MessageBoxButtons.YesNo);
+            if (dial == DialogResult.Yes)
+            {
+
+                DataTable info = new DataTable();
+                info = retreve_selectdata_from_database_one_bind("SELECT balance from student where student_id =:stud_id", stud_id);
+                if (int.Parse(info.Rows[0][0].ToString()) >= int.Parse(this.cost.Text))
+                {
+                    int finalstudbalance = int.Parse(info.Rows[0][0].ToString()) - int.Parse(this.cost.Text);
+                    DataTable info2 = new DataTable();
+                    info2 = retreve_selectdata_from_database_one_bind("select balance from instructor where instrcutor_id=:inst", this.instr_id);
+                    int finalinstrbalance = int.Parse(info2.Rows[0][0].ToString()) + int.Parse(this.cost.Text);
+                    int finalnumstudforcourse = int.Parse(this.num_of_student.Text) + 1;
+
+                    update("update  student set balance=:finalstudbalance where student_id=:stud_id", finalstudbalance.ToString(), stud_id);
+                    update("update  instructor set balance=:finalinstrbalance where instrcutor_id=:instr_id", finalinstrbalance.ToString(), instr_id);
+                    update("update course set num_of_students=:finalnumstudforcourse where course_id=:course_id", finalnumstudforcourse.ToString(), course_id);
+                    update_insert("insert into enrollment values (:stud_id,:course_id)", stud_id, course_id);
+                    MessageBox.Show("Enroll Sucessed");
+                }
+                else
+                {
+                    MessageBox.Show("Sorry! Your balance is smaller than course'balance ", "Enroll", MessageBoxButtons.OK);
+                }
+
+            }
+            else
+            {
+
+            }
+        }
+
+        private void cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void start_date_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

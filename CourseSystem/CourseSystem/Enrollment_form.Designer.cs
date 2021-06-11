@@ -30,27 +30,27 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.numofsessions = new Guna.UI.WinForms.GunaLineTextBox();
-            this.labe_of_sessions = new Guna.UI.WinForms.GunaLabel();
-            this.gunaCircleButton2 = new Guna.UI.WinForms.GunaCircleButton();
-            this.gunaCircleButton1 = new Guna.UI.WinForms.GunaCircleButton();
-            this.cost = new Guna.UI.WinForms.GunaLineTextBox();
-            this.duration_of_one_session = new Guna.UI.WinForms.GunaLineTextBox();
-            this.num_of_student = new Guna.UI.WinForms.GunaLineTextBox();
-            this.end_date = new Guna.UI.WinForms.GunaLineTextBox();
-            this.start_date = new Guna.UI.WinForms.GunaLineTextBox();
-            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.doctor = new Guna.UI.WinForms.GunaLineTextBox();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.course_name = new Guna.UI.WinForms.GunaLineTextBox();
+            this.cancel = new System.Windows.Forms.Button();
+            this.save = new System.Windows.Forms.Button();
+            this.start_date = new System.Windows.Forms.Label();
+            this.num_of_student = new System.Windows.Forms.Label();
+            this.cost = new System.Windows.Forms.Label();
+            this.numofsessions = new System.Windows.Forms.Label();
+            this.course_name = new System.Windows.Forms.Label();
+            this.duration_of_one_session = new System.Windows.Forms.Label();
+            this.end_date = new System.Windows.Forms.Label();
+            this.doctor = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.Course = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -62,28 +62,29 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1321, 126);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.numofsessions);
-            this.panel2.Controls.Add(this.labe_of_sessions);
-            this.panel2.Controls.Add(this.gunaCircleButton2);
-            this.panel2.Controls.Add(this.gunaCircleButton1);
-            this.panel2.Controls.Add(this.cost);
-            this.panel2.Controls.Add(this.duration_of_one_session);
-            this.panel2.Controls.Add(this.num_of_student);
-            this.panel2.Controls.Add(this.end_date);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.Course);
+            this.panel2.Controls.Add(this.cancel);
+            this.panel2.Controls.Add(this.save);
             this.panel2.Controls.Add(this.start_date);
-            this.panel2.Controls.Add(this.gunaLabel7);
-            this.panel2.Controls.Add(this.gunaLabel6);
-            this.panel2.Controls.Add(this.gunaLabel5);
-            this.panel2.Controls.Add(this.gunaLabel4);
-            this.panel2.Controls.Add(this.gunaLabel3);
-            this.panel2.Controls.Add(this.doctor);
-            this.panel2.Controls.Add(this.gunaLabel2);
-            this.panel2.Controls.Add(this.gunaLabel1);
+            this.panel2.Controls.Add(this.num_of_student);
+            this.panel2.Controls.Add(this.cost);
+            this.panel2.Controls.Add(this.numofsessions);
             this.panel2.Controls.Add(this.course_name);
+            this.panel2.Controls.Add(this.duration_of_one_session);
+            this.panel2.Controls.Add(this.end_date);
+            this.panel2.Controls.Add(this.doctor);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Location = new System.Drawing.Point(54, 69);
             this.panel2.Name = "panel2";
@@ -91,257 +92,105 @@
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // numofsessions
+            // cancel
             // 
-            this.numofsessions.BackColor = System.Drawing.Color.White;
-            this.numofsessions.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.numofsessions.Enabled = false;
-            this.numofsessions.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.numofsessions.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.numofsessions.LineColor = System.Drawing.Color.DodgerBlue;
-            this.numofsessions.Location = new System.Drawing.Point(201, 596);
-            this.numofsessions.Name = "numofsessions";
-            this.numofsessions.PasswordChar = '\0';
-            this.numofsessions.SelectedText = "";
-            this.numofsessions.Size = new System.Drawing.Size(363, 44);
-            this.numofsessions.TabIndex = 29;
+            this.cancel.Location = new System.Drawing.Point(1030, 589);
+            this.cancel.Name = "cancel";
+            this.cancel.Size = new System.Drawing.Size(147, 47);
+            this.cancel.TabIndex = 40;
+            this.cancel.Text = "Cancel";
+            this.cancel.UseVisualStyleBackColor = true;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
-            // labe_of_sessions
+            // save
             // 
-            this.labe_of_sessions.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.labe_of_sessions.Location = new System.Drawing.Point(3, 603);
-            this.labe_of_sessions.Name = "labe_of_sessions";
-            this.labe_of_sessions.Size = new System.Drawing.Size(173, 23);
-            this.labe_of_sessions.TabIndex = 28;
-            this.labe_of_sessions.Text = "Num_of_sessins:";
-            // 
-            // gunaCircleButton2
-            // 
-            this.gunaCircleButton2.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton2.AnimationSpeed = 0.03F;
-            this.gunaCircleButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCircleButton2.BorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton2.BorderSize = 5;
-            this.gunaCircleButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaCircleButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaCircleButton2.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton2.Image = null;
-            this.gunaCircleButton2.ImageSize = new System.Drawing.Size(52, 52);
-            this.gunaCircleButton2.Location = new System.Drawing.Point(980, 570);
-            this.gunaCircleButton2.Name = "gunaCircleButton2";
-            this.gunaCircleButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaCircleButton2.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton2.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton2.OnHoverImage = null;
-            this.gunaCircleButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton2.Size = new System.Drawing.Size(202, 66);
-            this.gunaCircleButton2.TabIndex = 27;
-            this.gunaCircleButton2.Text = "Cancel";
-            this.gunaCircleButton2.Click += new System.EventHandler(this.gunaCircleButton2_Click);
-            // 
-            // gunaCircleButton1
-            // 
-            this.gunaCircleButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton1.AnimationSpeed = 0.03F;
-            this.gunaCircleButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCircleButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton1.BorderSize = 5;
-            this.gunaCircleButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gunaCircleButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaCircleButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton1.Image = null;
-            this.gunaCircleButton1.ImageSize = new System.Drawing.Size(52, 52);
-            this.gunaCircleButton1.Location = new System.Drawing.Point(747, 570);
-            this.gunaCircleButton1.Name = "gunaCircleButton1";
-            this.gunaCircleButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaCircleButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton1.OnHoverImage = null;
-            this.gunaCircleButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton1.Size = new System.Drawing.Size(195, 66);
-            this.gunaCircleButton1.TabIndex = 23;
-            this.gunaCircleButton1.Text = "Save";
-            this.gunaCircleButton1.Click += new System.EventHandler(this.gunaCircleButton1_Click);
-            // 
-            // cost
-            // 
-            this.cost.BackColor = System.Drawing.Color.White;
-            this.cost.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.cost.Enabled = false;
-            this.cost.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cost.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.cost.LineColor = System.Drawing.Color.DodgerBlue;
-            this.cost.Location = new System.Drawing.Point(201, 524);
-            this.cost.Name = "cost";
-            this.cost.PasswordChar = '\0';
-            this.cost.SelectedText = "";
-            this.cost.Size = new System.Drawing.Size(363, 44);
-            this.cost.TabIndex = 21;
-            // 
-            // duration_of_one_session
-            // 
-            this.duration_of_one_session.BackColor = System.Drawing.Color.White;
-            this.duration_of_one_session.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.duration_of_one_session.Enabled = false;
-            this.duration_of_one_session.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.duration_of_one_session.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.duration_of_one_session.LineColor = System.Drawing.Color.DodgerBlue;
-            this.duration_of_one_session.Location = new System.Drawing.Point(845, 429);
-            this.duration_of_one_session.Name = "duration_of_one_session";
-            this.duration_of_one_session.PasswordChar = '\0';
-            this.duration_of_one_session.SelectedText = "";
-            this.duration_of_one_session.Size = new System.Drawing.Size(363, 44);
-            this.duration_of_one_session.TabIndex = 20;
-            // 
-            // num_of_student
-            // 
-            this.num_of_student.BackColor = System.Drawing.Color.White;
-            this.num_of_student.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.num_of_student.Enabled = false;
-            this.num_of_student.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.num_of_student.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.num_of_student.LineColor = System.Drawing.Color.DodgerBlue;
-            this.num_of_student.Location = new System.Drawing.Point(201, 429);
-            this.num_of_student.Name = "num_of_student";
-            this.num_of_student.PasswordChar = '\0';
-            this.num_of_student.SelectedText = "";
-            this.num_of_student.Size = new System.Drawing.Size(363, 44);
-            this.num_of_student.TabIndex = 19;
-            // 
-            // end_date
-            // 
-            this.end_date.BackColor = System.Drawing.Color.White;
-            this.end_date.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.end_date.Enabled = false;
-            this.end_date.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.end_date.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.end_date.LineColor = System.Drawing.Color.DodgerBlue;
-            this.end_date.Location = new System.Drawing.Point(845, 331);
-            this.end_date.Name = "end_date";
-            this.end_date.PasswordChar = '\0';
-            this.end_date.SelectedText = "";
-            this.end_date.Size = new System.Drawing.Size(363, 44);
-            this.end_date.TabIndex = 18;
+            this.save.Location = new System.Drawing.Point(838, 589);
+            this.save.Name = "save";
+            this.save.Size = new System.Drawing.Size(147, 47);
+            this.save.TabIndex = 38;
+            this.save.Text = "Save";
+            this.save.UseVisualStyleBackColor = true;
+            this.save.Click += new System.EventHandler(this.save_Click);
             // 
             // start_date
             // 
-            this.start_date.BackColor = System.Drawing.Color.White;
-            this.start_date.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.start_date.Enabled = false;
-            this.start_date.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.start_date.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.start_date.LineColor = System.Drawing.Color.DodgerBlue;
-            this.start_date.Location = new System.Drawing.Point(201, 333);
+            this.start_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.start_date.Location = new System.Drawing.Point(236, 324);
             this.start_date.Name = "start_date";
-            this.start_date.PasswordChar = '\0';
-            this.start_date.SelectedText = "";
-            this.start_date.Size = new System.Drawing.Size(363, 44);
-            this.start_date.TabIndex = 17;
+            this.start_date.Size = new System.Drawing.Size(325, 39);
+            this.start_date.TabIndex = 37;
+            this.start_date.Text = "label1";
+            this.start_date.Click += new System.EventHandler(this.start_date_Click);
             // 
-            // gunaLabel7
+            // num_of_student
             // 
-            this.gunaLabel7.AutoSize = true;
-            this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel7.Location = new System.Drawing.Point(742, 333);
-            this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(102, 28);
-            this.gunaLabel7.TabIndex = 16;
-            this.gunaLabel7.Text = "End_date:";
+            this.num_of_student.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.num_of_student.Location = new System.Drawing.Point(236, 429);
+            this.num_of_student.Name = "num_of_student";
+            this.num_of_student.Size = new System.Drawing.Size(325, 39);
+            this.num_of_student.TabIndex = 36;
+            this.num_of_student.Text = "label1";
+            this.num_of_student.Click += new System.EventHandler(this.num_of_student_Click);
             // 
-            // gunaLabel6
+            // cost
             // 
-            this.gunaLabel6.AutoSize = true;
-            this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel6.Location = new System.Drawing.Point(3, 333);
-            this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(114, 28);
-            this.gunaLabel6.TabIndex = 15;
-            this.gunaLabel6.Text = "Start_date:";
+            this.cost.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cost.Location = new System.Drawing.Point(236, 526);
+            this.cost.Name = "cost";
+            this.cost.Size = new System.Drawing.Size(325, 39);
+            this.cost.TabIndex = 35;
+            this.cost.Text = "label1";
+            this.cost.Click += new System.EventHandler(this.cost_Click);
             // 
-            // gunaLabel5
+            // numofsessions
             // 
-            this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel5.Location = new System.Drawing.Point(3, 431);
-            this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(180, 28);
-            this.gunaLabel5.TabIndex = 14;
-            this.gunaLabel5.Text = "Num_of_students:";
-            // 
-            // gunaLabel4
-            // 
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel4.Location = new System.Drawing.Point(592, 429);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(248, 28);
-            this.gunaLabel4.TabIndex = 13;
-            this.gunaLabel4.Text = "Duration_of_one_session:";
-            // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel3.Location = new System.Drawing.Point(3, 526);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(58, 28);
-            this.gunaLabel3.TabIndex = 12;
-            this.gunaLabel3.Text = "Cost:";
-            // 
-            // doctor
-            // 
-            this.doctor.BackColor = System.Drawing.Color.White;
-            this.doctor.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.doctor.Enabled = false;
-            this.doctor.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.doctor.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.doctor.LineColor = System.Drawing.Color.DodgerBlue;
-            this.doctor.Location = new System.Drawing.Point(845, 249);
-            this.doctor.Name = "doctor";
-            this.doctor.PasswordChar = '\0';
-            this.doctor.SelectedText = "";
-            this.doctor.Size = new System.Drawing.Size(363, 44);
-            this.doctor.TabIndex = 11;
-            this.doctor.TextChanged += new System.EventHandler(this.gunaLineTextBox1_TextChanged_1);
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel2.Location = new System.Drawing.Point(3, 248);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(89, 31);
-            this.gunaLabel2.TabIndex = 10;
-            this.gunaLabel2.Text = "Course:";
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.Location = new System.Drawing.Point(764, 247);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(54, 32);
-            this.gunaLabel1.TabIndex = 9;
-            this.gunaLabel1.Text = "DR:";
-            this.gunaLabel1.Click += new System.EventHandler(this.gunaLabel1_Click);
+            this.numofsessions.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numofsessions.Location = new System.Drawing.Point(236, 603);
+            this.numofsessions.Name = "numofsessions";
+            this.numofsessions.Size = new System.Drawing.Size(325, 39);
+            this.numofsessions.TabIndex = 34;
+            this.numofsessions.Text = "label1";
+            this.numofsessions.Click += new System.EventHandler(this.numofsessions_Click);
             // 
             // course_name
             // 
-            this.course_name.BackColor = System.Drawing.Color.White;
-            this.course_name.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.course_name.Enabled = false;
-            this.course_name.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.course_name.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.course_name.LineColor = System.Drawing.Color.DodgerBlue;
-            this.course_name.Location = new System.Drawing.Point(201, 248);
+            this.course_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.course_name.Location = new System.Drawing.Point(236, 250);
             this.course_name.Name = "course_name";
-            this.course_name.PasswordChar = '\0';
-            this.course_name.SelectedText = "";
-            this.course_name.Size = new System.Drawing.Size(363, 44);
-            this.course_name.TabIndex = 1;
-            this.course_name.TextChanged += new System.EventHandler(this.gunaLineTextBox1_TextChanged);
+            this.course_name.Size = new System.Drawing.Size(325, 39);
+            this.course_name.TabIndex = 33;
+            this.course_name.Text = "label4";
+            this.course_name.Click += new System.EventHandler(this.course_name_Click);
+            // 
+            // duration_of_one_session
+            // 
+            this.duration_of_one_session.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.duration_of_one_session.Location = new System.Drawing.Point(896, 429);
+            this.duration_of_one_session.Name = "duration_of_one_session";
+            this.duration_of_one_session.Size = new System.Drawing.Size(325, 39);
+            this.duration_of_one_session.TabIndex = 32;
+            this.duration_of_one_session.Text = "label3";
+            this.duration_of_one_session.Click += new System.EventHandler(this.duration_of_one_session_Click);
+            // 
+            // end_date
+            // 
+            this.end_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.end_date.Location = new System.Drawing.Point(896, 335);
+            this.end_date.Name = "end_date";
+            this.end_date.Size = new System.Drawing.Size(325, 39);
+            this.end_date.TabIndex = 31;
+            this.end_date.Text = "label2";
+            this.end_date.Click += new System.EventHandler(this.end_date_Click);
+            // 
+            // doctor
+            // 
+            this.doctor.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.doctor.Location = new System.Drawing.Point(896, 242);
+            this.doctor.Name = "doctor";
+            this.doctor.Size = new System.Drawing.Size(325, 39);
+            this.doctor.TabIndex = 30;
+            this.doctor.Text = "label1";
+            this.doctor.Click += new System.EventHandler(this.doctor_Click);
             // 
             // pictureBox1
             // 
@@ -352,6 +201,80 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // Course
+            // 
+            this.Course.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Course.Location = new System.Drawing.Point(5, 250);
+            this.Course.Name = "Course";
+            this.Course.Size = new System.Drawing.Size(115, 37);
+            this.Course.TabIndex = 41;
+            this.Course.Text = "Course:";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(5, 324);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(145, 37);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "start_date:";
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(5, 431);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(232, 37);
+            this.label2.TabIndex = 43;
+            this.label2.Text = "Num_of_students:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 526);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(117, 37);
+            this.label3.TabIndex = 44;
+            this.label3.Text = "Cost:";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 603);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(229, 37);
+            this.label4.TabIndex = 45;
+            this.label4.Text = "Num_of_sessins:";
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(726, 335);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(139, 37);
+            this.label5.TabIndex = 46;
+            this.label5.Text = "End_date:";
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(565, 427);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(333, 37);
+            this.label6.TabIndex = 47;
+            this.label6.Text = "Duration_of_one_session:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(726, 242);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 37);
+            this.label7.TabIndex = 48;
+            this.label7.Text = "DR:";
             // 
             // Enrollment_form
             // 
@@ -364,7 +287,6 @@
             this.Name = "Enrollment_form";
             this.Text = "Enrollment_form";
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -375,25 +297,25 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI.WinForms.GunaLineTextBox course_name;
-        private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI.WinForms.GunaLineTextBox doctor;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
-        private Guna.UI.WinForms.GunaLineTextBox cost;
-        private Guna.UI.WinForms.GunaLineTextBox duration_of_one_session;
-        private Guna.UI.WinForms.GunaLineTextBox num_of_student;
-        private Guna.UI.WinForms.GunaLineTextBox end_date;
-        private Guna.UI.WinForms.GunaLineTextBox start_date;
-        private Guna.UI.WinForms.GunaLabel gunaLabel7;
-        private Guna.UI.WinForms.GunaLabel gunaLabel6;
-        private Guna.UI.WinForms.GunaLabel gunaLabel5;
-        private Guna.UI.WinForms.GunaLabel gunaLabel4;
-        private Guna.UI.WinForms.GunaCircleButton gunaCircleButton1;
-        private Guna.UI.WinForms.GunaCircleButton gunaCircleButton2;
-        private Guna.UI.WinForms.GunaLineTextBox numofsessions;
-        private Guna.UI.WinForms.GunaLabel labe_of_sessions;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
+        private System.Windows.Forms.Label course_name;
+        private System.Windows.Forms.Label duration_of_one_session;
+        private System.Windows.Forms.Label end_date;
+        private System.Windows.Forms.Label doctor;
+        private System.Windows.Forms.Label start_date;
+        private System.Windows.Forms.Label num_of_student;
+        private System.Windows.Forms.Label cost;
+        private System.Windows.Forms.Label numofsessions;
+        private System.Windows.Forms.Button save;
+        private System.Windows.Forms.Button cancel;
+        private System.Windows.Forms.Label Course;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
