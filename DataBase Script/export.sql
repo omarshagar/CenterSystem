@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  File created - Thursday-June-03-2021   
+--  File created - Saturday-June-12-2021   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Sequence ACTID
@@ -17,6 +17,11 @@
 
    CREATE SEQUENCE  "HALL_ID_SEQ"  MINVALUE 1 MAXVALUE 100000000000000000 INCREMENT BY 1 START WITH 1 CACHE 20 NOORDER  NOCYCLE ;
 --------------------------------------------------------
+--  DDL for Sequence INSTRUCTOR_SEQ
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "INSTRUCTOR_SEQ"  MINVALUE 1 MAXVALUE 10000 INCREMENT BY 1 START WITH 41 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
 --  DDL for Sequence SEQID
 --------------------------------------------------------
 
@@ -30,14 +35,14 @@
 --  DDL for Sequence STUDENT_ID_SEQ
 --------------------------------------------------------
 
-   CREATE SEQUENCE  "STUDENT_ID_SEQ"  MINVALUE 1 MAXVALUE 100000000 INCREMENT BY 1 START WITH 21 CACHE 20 NOORDER  NOCYCLE ;
+   CREATE SEQUENCE  "STUDENT_ID_SEQ"  MINVALUE 1 MAXVALUE 100000000 INCREMENT BY 1 START WITH 61 CACHE 20 NOORDER  NOCYCLE ;
 --------------------------------------------------------
 --  DDL for Table COURSE
 --------------------------------------------------------
 
   CREATE TABLE "COURSE" 
    (	"COURSE_ID" NUMBER, 
-	"COURSE_NAME" VARCHAR2(20), 
+	"COURSE_NAME" VARCHAR2(200), 
 	"COST" NUMBER, 
 	"DURATION_OF_ONE_SESSION" NUMBER DEFAULT 2, 
 	"NUM_OF_STUDENTS" NUMBER DEFAULT 0, 
@@ -70,7 +75,7 @@
    (	"INSTRUCTOR_ID" NUMBER, 
 	"FIRSTNAME" VARCHAR2(20), 
 	"LASTNAME" VARCHAR2(20), 
-	"EMAIL" VARCHAR2(50), 
+	"EMAIL" VARCHAR2(150), 
 	"PASSWORD" VARCHAR2(20) DEFAULT 123, 
 	"BALANCE" NUMBER DEFAULT 0, 
 	"MOBILE_NUMBER" NUMBER DEFAULT 0, 
@@ -92,10 +97,10 @@
 --------------------------------------------------------
 
   CREATE TABLE "STUDENT" 
-   (	"STUDENT_ID" NUMBER, 
+   (	"STUDENT_ID" NUMBER DEFAULT 0, 
 	"FIRSTNAME" VARCHAR2(20), 
 	"LASTNAME" VARCHAR2(20), 
-	"EMAIL" VARCHAR2(50), 
+	"EMAIL" VARCHAR2(150), 
 	"PASSWORD" VARCHAR2(20) DEFAULT 123, 
 	"BALANCE" NUMBER DEFAULT 0, 
 	"MOBILE_NUMBER" NUMBER DEFAULT 0, 
@@ -108,6 +113,7 @@
 ---------------------------------------------------
 REM INSERTING into HALL
 Insert into HALL (HALL_NUM,CAPACITY) values (1,30);
+Insert into HALL (HALL_NUM,CAPACITY) values (2,100);
 
 ---------------------------------------------------
 --   END DATA FOR TABLE HALL
@@ -118,11 +124,19 @@ Insert into HALL (HALL_NUM,CAPACITY) values (1,30);
 --   FILTER = none used
 ---------------------------------------------------
 REM INSERTING into INSTRUCTOR
-Insert into INSTRUCTOR (INSTRUCTOR_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (1,'Ahmed','Salah','tatata','111111',3000,10101010101,'AhmedSala7');
+Insert into INSTRUCTOR (INSTRUCTOR_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (21,'Omar','Shagar','de7ko@com','123456',0,1145170059,'ShagarMan');
+Insert into INSTRUCTOR (INSTRUCTOR_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (27,'stopstop','stop','stop@s','stopstop',0,1010101013,'stopstop');
+Insert into INSTRUCTOR (INSTRUCTOR_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (1,'Ahmed','Salah','tatata','111111',4006,10101010101,'AhmedSala7');
 Insert into INSTRUCTOR (INSTRUCTOR_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (6,'Kad','Kad','Kad#ol','123',1,1010,'Kad');
+Insert into INSTRUCTOR (INSTRUCTOR_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (22,'man','man','man@v','manman',0,1145170059,'man');
+Insert into INSTRUCTOR (INSTRUCTOR_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (23,'good','good','good@h','goodgood',0,1010101011,'good');
+Insert into INSTRUCTOR (INSTRUCTOR_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (25,'hah','hah','hah@s','hahhah',0,1010101010,'hah');
+Insert into INSTRUCTOR (INSTRUCTOR_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (26,'stopstopstop','stop','stop@h','stopstop',0,1010101010,'stop');
+Insert into INSTRUCTOR (INSTRUCTOR_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (24,'goodlol','goodlol','goodlol@h','goodlolgoodlol',0,1010101010,'goodlol');
 Insert into INSTRUCTOR (INSTRUCTOR_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (2,'Karim','Emara','hh','123',0,1,'hh');
 Insert into INSTRUCTOR (INSTRUCTOR_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (5,'d','d','d','123',1,3,'d');
 Insert into INSTRUCTOR (INSTRUCTOR_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (4,'Koa','ss','ss','123',0,2,'ss');
+Insert into INSTRUCTOR (INSTRUCTOR_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (3,'888888','888888','888888','888888',0,888888,'888888');
 
 ---------------------------------------------------
 --   END DATA FOR TABLE INSTRUCTOR
@@ -133,6 +147,8 @@ Insert into INSTRUCTOR (INSTRUCTOR_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,
 --   FILTER = none used
 ---------------------------------------------------
 REM INSERTING into SESSIONS
+Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) values (1,1,1,5,to_timestamp('12-SEP-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'));
+Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) values (2,2,1,5,to_timestamp('12-SEP-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'));
 Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) values (18,1,1,3,to_timestamp('17-AUG-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'));
 Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) values (19,1,1,3,to_timestamp('24-AUG-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'));
 Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) values (20,1,1,3,to_timestamp('31-AUG-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'));
@@ -181,7 +197,7 @@ Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) val
 Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) values (57,1,1,3,to_timestamp('10-AUG-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'));
 Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) values (58,1,1,3,to_timestamp('17-AUG-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'));
 Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) values (59,1,1,3,to_timestamp('24-AUG-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'));
-Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) values (60,1,1,3,to_timestamp('31-AUG-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'));
+Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) values (602,1,1,3,to_timestamp('31-AUG-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'));
 Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) values (61,1,1,3,to_timestamp('07-SEP-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'));
 Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) values (62,1,1,3,to_timestamp('10-AUG-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'));
 Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) values (63,1,1,3,to_timestamp('17-AUG-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'));
@@ -198,9 +214,16 @@ Insert into SESSIONS (SESSION_ID,COURSE_ID,HALL_NUM,START_HOUR,SESSION_DATE) val
 --   FILTER = none used
 ---------------------------------------------------
 REM INSERTING into STUDENT
-Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (3,'Omar','Shreet','omar.btw@hotnailc,om','123',520,101029327,'OmarShreet');
-Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (0,'Omar','Monem','whatever','123',400,1010,'omr2000');
-Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (2,'Hassan','Hassan','whateverlol','123',2000,1928,'Omar2000');
+Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (3,'Omar','Shreet','omar.btw@hotnailc,om','123',518,101029327,'OmarShreet');
+Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (26,'Omar','Hafez','hafezsayo7a@hotmail.com','123456',0,1920283,'HafezTheSayo7a');
+Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (27,'Omar','Hafez','HafezTheSayo7a@hotmail.com','myheart',0,1001010103,'MyNameIsHafez');
+Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (41,'man','man','man@H','manman',0,1010101010,'man');
+Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (21,'hi','hi','Hi','123',0,123,'omg');
+Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (0,'OMR','Mon3eem','whatever','123456',98,1198765467,'omr2000');
+Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (25,'Omar','Abdelmonem','Omar@hot','88888888',0,1920,'Omarbitw');
+Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (2,'Hassan','Hassan','whateverlol','123',1298,1928,'Omar2000');
+Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (22,' instructor_seq',' instructor_seq',' instructor_seq','00000000000',0,1,' instructor_seq');
+Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE_NUMBER,USERNAME) values (24,'Karim','3mara','asd','9999999',0,1450399202,'Karimhopa');
 
 ---------------------------------------------------
 --   END DATA FOR TABLE STUDENT
@@ -211,6 +234,14 @@ Insert into STUDENT (STUDENT_ID,FIRSTNAME,LASTNAME,EMAIL,PASSWORD,BALANCE,MOBILE
 --   FILTER = none used
 ---------------------------------------------------
 REM INSERTING into ENROLLMENT
+Insert into ENROLLMENT (STUDNET_ID,COURSE_ID) values (0,1);
+Insert into ENROLLMENT (STUDNET_ID,COURSE_ID) values (0,2);
+Insert into ENROLLMENT (STUDNET_ID,COURSE_ID) values (0,3);
+Insert into ENROLLMENT (STUDNET_ID,COURSE_ID) values (2,1);
+Insert into ENROLLMENT (STUDNET_ID,COURSE_ID) values (2,2);
+Insert into ENROLLMENT (STUDNET_ID,COURSE_ID) values (2,3);
+Insert into ENROLLMENT (STUDNET_ID,COURSE_ID) values (3,1);
+Insert into ENROLLMENT (STUDNET_ID,COURSE_ID) values (3,2);
 
 ---------------------------------------------------
 --   END DATA FOR TABLE ENROLLMENT
@@ -221,8 +252,9 @@ REM INSERTING into ENROLLMENT
 --   FILTER = none used
 ---------------------------------------------------
 REM INSERTING into COURSE
-Insert into COURSE (COURSE_ID,COURSE_NAME,COST,DURATION_OF_ONE_SESSION,NUM_OF_STUDENTS,NUMBER_OF_SESSIONS,INSTRUCTOR_ID,START_DATE,END_DATE) values (1,'gg',2,1,50,2,1,to_timestamp('10-AUG-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'),to_timestamp('10-SEP-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'));
-Insert into COURSE (COURSE_ID,COURSE_NAME,COST,DURATION_OF_ONE_SESSION,NUM_OF_STUDENTS,NUMBER_OF_SESSIONS,INSTRUCTOR_ID,START_DATE,END_DATE) values (2,'Math',300,2,80,4,1,to_timestamp('12-AUG-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'),to_timestamp('12-SEP-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'));
+Insert into COURSE (COURSE_ID,COURSE_NAME,COST,DURATION_OF_ONE_SESSION,NUM_OF_STUDENTS,NUMBER_OF_SESSIONS,INSTRUCTOR_ID,START_DATE,END_DATE) values (3,'TheMaze',400,2,101,12,1,to_timestamp('19-OCT-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'),to_timestamp('22-JAN-22 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'));
+Insert into COURSE (COURSE_ID,COURSE_NAME,COST,DURATION_OF_ONE_SESSION,NUM_OF_STUDENTS,NUMBER_OF_SESSIONS,INSTRUCTOR_ID,START_DATE,END_DATE) values (1,'gg',2,1,53,2,1,to_timestamp('10-AUG-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'),to_timestamp('10-SEP-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'));
+Insert into COURSE (COURSE_ID,COURSE_NAME,COST,DURATION_OF_ONE_SESSION,NUM_OF_STUDENTS,NUMBER_OF_SESSIONS,INSTRUCTOR_ID,START_DATE,END_DATE) values (2,'Math',300,2,82,4,1,to_timestamp('12-AUG-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'),to_timestamp('12-SEP-21 12.00.00.000000000 AM','DD-MON-RR HH.MI.SS.FF AM'));
 
 ---------------------------------------------------
 --   END DATA FOR TABLE COURSE
@@ -489,6 +521,39 @@ end check_cont_in_sessions;
 /
 
 --------------------------------------------------------
+--  DDL for Procedure CONFIRM_INSTRUCTOR
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE PROCEDURE "CONFIRM_INSTRUCTOR" (myemail in VARCHAR2, mypassword out VARCHAR2, mysid out NUMBER)
+as
+begin
+select instructor_id, password
+into mysid, mypassword
+from instructor 
+WHERE email = myemail;
+end;
+
+/
+
+--------------------------------------------------------
+--  DDL for Procedure CONFIRM_STUDENT
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE PROCEDURE "CONFIRM_STUDENT" (myemail in VARCHAR2, mypassword out VARCHAR2, mysid out NUMBER)
+as
+begin
+select student_id, password
+into mysid, mypassword
+from student 
+WHERE email = myemail;
+end;
+
+/
+
+
+--------------------------------------------------------
 --  DDL for Procedure INSERT_STUDENT
 --------------------------------------------------------
 set define off;
@@ -498,6 +563,23 @@ as
 begin
 insert into student(student_id,username, firstname, lastname, mobile_number, email, BALANCE ) VALUES (student_id_seq.nextval, usern, firstn, lastn,phone, em, bal);
 end;
+
+/
+
+--------------------------------------------------------
+--  DDL for Procedure RETURN_ENROLLED_COURSES
+--------------------------------------------------------
+set define off;
+
+  CREATE OR REPLACE PROCEDURE "RETURN_ENROLLED_COURSES" 
+(id number, cur out sys_refcursor)
+as
+begin
+open cur for
+select c.instructor_id, c.course_name 
+from course c,enrollment e
+where c.course_id = e.course_id and e.studnet_id=id;
+End ;
 
 /
 

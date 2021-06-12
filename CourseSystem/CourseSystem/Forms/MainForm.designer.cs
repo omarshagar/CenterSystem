@@ -38,10 +38,10 @@ namespace CourseSystem.Forms
             // 
             this.AdminButton.BackColor = System.Drawing.Color.Transparent;
             this.AdminButton.ForeColor = System.Drawing.Color.Transparent;
-            this.AdminButton.Location = new System.Drawing.Point(65, 177);
-            this.AdminButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.AdminButton.Location = new System.Drawing.Point(313, 46);
+            this.AdminButton.Margin = new System.Windows.Forms.Padding(4);
             this.AdminButton.Name = "AdminButton";
-            this.AdminButton.Size = new System.Drawing.Size(217, 175);
+            this.AdminButton.Size = new System.Drawing.Size(163, 142);
             this.AdminButton.TabIndex = 0;
             this.AdminButton.Click += new System.EventHandler(this.AdminButton_Click);
             this.AdminButton.Load += new System.EventHandler(this.AdminButton_Load);
@@ -50,10 +50,10 @@ namespace CourseSystem.Forms
             // 
             this.StudentButton.BackColor = System.Drawing.Color.Transparent;
             this.StudentButton.ForeColor = System.Drawing.Color.Transparent;
-            this.StudentButton.Location = new System.Drawing.Point(427, 177);
-            this.StudentButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.StudentButton.Location = new System.Drawing.Point(94, 240);
+            this.StudentButton.Margin = new System.Windows.Forms.Padding(4);
             this.StudentButton.Name = "StudentButton";
-            this.StudentButton.Size = new System.Drawing.Size(217, 175);
+            this.StudentButton.Size = new System.Drawing.Size(163, 142);
             this.StudentButton.TabIndex = 1;
             this.StudentButton.Click += new System.EventHandler(this.StudentButton_Click);
             // 
@@ -62,22 +62,22 @@ namespace CourseSystem.Forms
             this.InstructorButton.BackColor = System.Drawing.Color.Transparent;
             this.InstructorButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.InstructorButton.ForeColor = System.Drawing.Color.Transparent;
-            this.InstructorButton.Location = new System.Drawing.Point(771, 177);
-            this.InstructorButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.InstructorButton.Location = new System.Drawing.Point(520, 240);
+            this.InstructorButton.Margin = new System.Windows.Forms.Padding(4);
             this.InstructorButton.Name = "InstructorButton";
-            this.InstructorButton.Size = new System.Drawing.Size(217, 175);
+            this.InstructorButton.Size = new System.Drawing.Size(163, 142);
             this.InstructorButton.TabIndex = 2;
             this.InstructorButton.Click += new System.EventHandler(this.InstructorButton_Click);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.InstructorButton);
             this.Controls.Add(this.StudentButton);
             this.Controls.Add(this.AdminButton);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.OnLoad);

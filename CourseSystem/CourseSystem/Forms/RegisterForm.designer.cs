@@ -54,11 +54,12 @@ namespace CourseSystem.Forms
             // 
             // uname
             // 
+            this.uname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.uname.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uname.Location = new System.Drawing.Point(125, 106);
+            this.uname.Location = new System.Drawing.Point(124, 108);
             this.uname.Margin = new System.Windows.Forms.Padding(2);
             this.uname.Name = "uname";
-            this.uname.Size = new System.Drawing.Size(191, 26);
+            this.uname.Size = new System.Drawing.Size(191, 19);
             this.uname.TabIndex = 1;
             // 
             // unameLabel
@@ -97,11 +98,12 @@ namespace CourseSystem.Forms
             // email
             // 
             this.email.AcceptsReturn = true;
+            this.email.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.email.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.email.Location = new System.Drawing.Point(125, 275);
             this.email.Margin = new System.Windows.Forms.Padding(2);
             this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(191, 26);
+            this.email.Size = new System.Drawing.Size(191, 19);
             this.email.TabIndex = 7;
             // 
             // lnameLabel
@@ -117,11 +119,12 @@ namespace CourseSystem.Forms
             // 
             // lname
             // 
+            this.lname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lname.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lname.Location = new System.Drawing.Point(125, 218);
             this.lname.Margin = new System.Windows.Forms.Padding(2);
             this.lname.Name = "lname";
-            this.lname.Size = new System.Drawing.Size(191, 26);
+            this.lname.Size = new System.Drawing.Size(191, 19);
             this.lname.TabIndex = 5;
             // 
             // label4
@@ -137,11 +140,12 @@ namespace CourseSystem.Forms
             // 
             // mobile
             // 
+            this.mobile.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.mobile.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mobile.Location = new System.Drawing.Point(471, 218);
+            this.mobile.Location = new System.Drawing.Point(471, 220);
             this.mobile.Margin = new System.Windows.Forms.Padding(2);
             this.mobile.Name = "mobile";
-            this.mobile.Size = new System.Drawing.Size(191, 26);
+            this.mobile.Size = new System.Drawing.Size(191, 19);
             this.mobile.TabIndex = 9;
             // 
             // label2
@@ -168,21 +172,24 @@ namespace CourseSystem.Forms
             // 
             // pass
             // 
+            this.pass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.pass.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pass.Location = new System.Drawing.Point(472, 106);
+            this.pass.Location = new System.Drawing.Point(472, 108);
             this.pass.Margin = new System.Windows.Forms.Padding(2);
             this.pass.Name = "pass";
-            this.pass.Size = new System.Drawing.Size(191, 26);
+            this.pass.Size = new System.Drawing.Size(191, 19);
             this.pass.TabIndex = 13;
+            this.pass.UseSystemPasswordChar = true;
             // 
             // fname
             // 
             this.fname.AcceptsReturn = true;
+            this.fname.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.fname.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fname.Location = new System.Drawing.Point(125, 163);
             this.fname.Margin = new System.Windows.Forms.Padding(2);
             this.fname.Name = "fname";
-            this.fname.Size = new System.Drawing.Size(191, 26);
+            this.fname.Size = new System.Drawing.Size(191, 19);
             this.fname.TabIndex = 3;
             // 
             // label1
@@ -248,12 +255,14 @@ namespace CourseSystem.Forms
             // cpass
             // 
             this.cpass.AcceptsReturn = true;
+            this.cpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.cpass.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cpass.Location = new System.Drawing.Point(471, 160);
+            this.cpass.Location = new System.Drawing.Point(471, 162);
             this.cpass.Margin = new System.Windows.Forms.Padding(2);
             this.cpass.Name = "cpass";
-            this.cpass.Size = new System.Drawing.Size(191, 26);
+            this.cpass.Size = new System.Drawing.Size(191, 19);
             this.cpass.TabIndex = 24;
+            this.cpass.UseSystemPasswordChar = true;
             // 
             // RegisterForm
             // 

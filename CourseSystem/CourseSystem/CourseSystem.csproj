@@ -69,6 +69,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="courses_not_enrollment_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="courses_not_enrollment_form.designer.cs">
+      <DependentUpon>courses_not_enrollment_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enrollment_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enrollment_form.designer.cs">
+      <DependentUpon>Enrollment_form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +104,12 @@
     </Compile>
     <Compile Include="Forms\MainForm.designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_window.designer.cs">
+      <DependentUpon>main_window.cs</DependentUpon>
     </Compile>
     <Compile Include="ManageHallsForm.cs">
       <SubType>Form</SubType>
@@ -150,12 +168,30 @@
       <DependentUpon>StudentReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlStud.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlStud.designer.cs">
+      <DependentUpon>UserControlStud.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="courses_not_enrollment_form.resx">
+      <DependentUpon>courses_not_enrollment_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enrollment_form.resx">
+      <DependentUpon>Enrollment_form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_window.resx">
+      <DependentUpon>main_window.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageHallsForm.resx">
       <DependentUpon>ManageHallsForm.cs</DependentUpon>
@@ -206,8 +245,14 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>StudentReport.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlStud.resx">
+      <DependentUpon>UserControlStud.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -272,6 +317,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\startPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enroll-smartphone-finance-icon-simple-260nw-1674463246.jpg" />
+    <None Include="Resources\enroll-smartphone-finance-icon-simple-260nw-1674463246_update.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\courses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

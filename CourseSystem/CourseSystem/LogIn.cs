@@ -15,14 +15,12 @@ namespace CourseSystem
 {
     public partial class LogIn : Form
     {
-        char option;
         // string ordb = "Data Source = localhost/orcl; User Id =useromr; password= Administrator1;";
-        string ordb = "Data Source = orcl4; User Id = Hr; password= hr;";
+        string ordb = "Data Source = localhost/orcl; User Id = Useromr; password= Administrator1;";
         OracleConnection con;
         public LogIn()
         {
             //option = op;
-            option = 'i';
             InitializeComponent();
         }
 
@@ -62,100 +60,135 @@ namespace CourseSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+            bool cont = true; 
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = con;
-            if (userNametxt1.User_Name=="admin"&& passwordtxt1.Password=="admin")
+
+            if(userNametxt1.User_Name == "" || passwordtxt1.Password == "")
             {
-                MainAdminForm MAF = new MainAdminForm();
-                this.Hide();
-                MAF.ShowDialog();
-                this.Close();
-                return;
+                cont = false;
+                MessageBox.Show("Complete All Mandatory Data");         
             }
 
-            else if(radioButton1.Checked)
+            if (cont)
             {
-                cmd.CommandText = "confirm_student";
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("email", userNametxt1.User_Name);
-                //cmd.Parameters.Add("pass", OracleDbType.Varchar2, ParameterDirection.Output);
-                OracleParameter out_1 = new OracleParameter();
-                out_1.OracleDbType = OracleDbType.Varchar2;
-                out_1.Direction = ParameterDirection.Output;
-                out_1.Size = 500;
-                cmd.Parameters.Add(out_1);
-                cmd.Parameters.Add("id", OracleDbType.Int32, ParameterDirection.Output);
-
-                string myPassword="";
-                int myid=100;             
-                try
+                if (userNametxt1.User_Name == "admin" && passwordtxt1.Password == "admin")
                 {
-                    cmd.ExecuteNonQuery();
-                    myid = Convert.ToInt32(cmd.Parameters["id"].Value.ToString());
-                    myPassword = cmd.Parameters[1].Value.ToString();
-                    if (myPassword.Equals(passwordtxt1.Password))
-                    {
-                        MessageBox.Show("LOGGED IN");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Incorrect Password!");
-                    }
+                    MainAdminForm MAF = new MainAdminForm();
+                    this.Hide();
+                    MAF.ShowDialog();
+                    this.Close();
+                    return;
                 }
-                catch
-                {
-                    MessageBox.Show("User Doesn't Exists!" + myid);
-                }
-            }
 
-            else if(radioButton2.Checked)
-            {
-                cmd.CommandText = "confirm_instructor";
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("email", userNametxt1.User_Name);
-                //cmd.Parameters.Add("pass", OracleDbType.Varchar2, ParameterDirection.Output);
-                OracleParameter out_1 = new OracleParameter();
-                out_1.OracleDbType = OracleDbType.Varchar2;
-                out_1.Direction = ParameterDirection.Output;
-                out_1.Size = 500;
-                cmd.Parameters.Add(out_1);
-                cmd.Parameters.Add("id", OracleDbType.Int32, ParameterDirection.Output);
-
-                string myPassword = "";
-                int myid = 100;
-                try
+                else if (radioButton1.Checked)
                 {
-                    cmd.ExecuteNonQuery();
-                    myid = Convert.ToInt32(cmd.Parameters["id"].Value.ToString());
-                    myPassword = cmd.Parameters[1].Value.ToString();
-                    if (myPassword.Equals(passwordtxt1.Password))
+                    cmd.CommandText = "confirm_student";
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add("email", userNametxt1.User_Name);
+                    //cmd.Parameters.Add("pass", OracleDbType.Varchar2, ParameterDirection.Output);
+                    OracleParameter out_1 = new OracleParameter();
+                    out_1.OracleDbType = OracleDbType.Varchar2;
+                    out_1.Direction = ParameterDirection.Output;
+                    out_1.Size = 500;
+                    cmd.Parameters.Add(out_1);
+                    cmd.Parameters.Add("id", OracleDbType.Int32, ParameterDirection.Output);
+
+                    string myPassword = "";
+                    int myid = 100;
+                    try
                     {
-                        MessageBox.Show("LOGGED IN");
+                        cmd.ExecuteNonQuery();
+                        myid = Convert.ToInt32(cmd.Parameters["id"].Value.ToString());
+                        myPassword = cmd.Parameters[1].Value.ToString();
+                        if (myPassword.Equals(passwordtxt1.Password))
+                        {
+                            main_form mf = new main_form(myid);
+                            this.Hide();
+                            mf.ShowDialog();
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Incorrect Password!");
+                        }
                     }
-                    else
+                    catch
                     {
-                        MessageBox.Show("Incorrect Password!");
+                        MessageBox.Show("User Doesn't Exists!");
                     }
                 }
-                catch
-                {
-                    MessageBox.Show("User Doesn't Exists!");
-                }
-            }
 
-            else
-            {
-                MessageBox.Show("Please Choose Your Role.");
+                else if (radioButton2.Checked)
+                {
+                    cmd.CommandText = "confirm_instructor";
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.Add("email", userNametxt1.User_Name);
+                    //cmd.Parameters.Add("pass", OracleDbType.Varchar2, ParameterDirection.Output);
+                    OracleParameter out_1 = new OracleParameter();
+                    out_1.OracleDbType = OracleDbType.Varchar2;
+                    out_1.Direction = ParameterDirection.Output;
+                    out_1.Size = 500;
+                    cmd.Parameters.Add(out_1);
+                    cmd.Parameters.Add("id", OracleDbType.Int32, ParameterDirection.Output);
+
+                    string myPassword = "";
+                    int myid = 100;
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                        myid = Convert.ToInt32(cmd.Parameters["id"].Value.ToString());
+                        myPassword = cmd.Parameters[1].Value.ToString();
+                        if (myPassword.Equals(passwordtxt1.Password))
+                        {
+                            MessageBox.Show("LOGGED IN");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Incorrect Password!");
+                        }
+                    }
+                    catch
+                    {
+                        MessageBox.Show("User Doesn't Exists!");
+                    }
+                }
+
+                else
+                {
+                    MessageBox.Show("Please Choose Your Role.");
+                }
             }
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+
         }
 
         private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Forms.RegisterForm rg1;
+            if (radioButton1.Checked)
+            {
+                rg1 = new Forms.RegisterForm('s');
+                rg1.ShowDialog();
+
+            }
+            else if (radioButton2.Checked)
+            {
+                rg1 = new Forms.RegisterForm('i');
+                rg1.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please Choose Your Role.");
+            }
         }
     }
 }

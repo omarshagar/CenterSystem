@@ -72,6 +72,11 @@ namespace CourseSystem.Forms
                 cont = false;
             }
 
+            else if ((mobile.Text.Length != 11) || (mobile.Text[0] != '0' || mobile.Text[1] != '1'))
+            {
+                MessageBox.Show("Enter a Valid Phone Number!");
+                cont = false;
+            }
 
             if (cont)
             {
@@ -99,7 +104,6 @@ namespace CourseSystem.Forms
                 }
                 else if (choice == 'i')
                 {
-                    MessageBox.Show("Registration Completed \n Welcome");
                     cmd.CommandText = "insert into instructor (instructor_id, firstname, lastname, email,  password,   mobile_number,username ) " +
                                        "VALUES (instructor_seq.nextval, :fname, :lname, :email,:pass, :mobile, :uname)";
                     cmd.CommandType = CommandType.Text;
