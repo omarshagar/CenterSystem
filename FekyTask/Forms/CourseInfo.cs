@@ -16,7 +16,9 @@ namespace FekyTask.Forms
     {
         CrystalReport1 CR;
         int InstID;
-        string ord = "data source=orcl1;user id=feky;password=ykef;";
+        // string ord = "data source=orcl1;user id=feky;password=ykef;";
+        string ord = "data source=orcl4;user id=scott;password=tiger;";
+
         OracleConnection conn;
         
         public CourseInfo(int id = 1)

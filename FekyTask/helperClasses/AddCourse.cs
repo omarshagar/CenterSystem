@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FekyTask.helperClasses
 {
-    class AddCourse
+    public class AddCourse
     {
         string CourseName;
         int Cost, sessionDuration, numOfStudents, numOfsessions;

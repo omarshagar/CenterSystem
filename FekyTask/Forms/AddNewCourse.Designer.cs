@@ -49,18 +49,21 @@ namespace FekyTask.Forms
             // startDate
             // 
             this.startDate.CalendarFont = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startDate.Location = new System.Drawing.Point(267, 553);
+            this.startDate.Location = new System.Drawing.Point(356, 681);
+            this.startDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.startDate.Name = "startDate";
-            this.startDate.Size = new System.Drawing.Size(299, 20);
+            this.startDate.Size = new System.Drawing.Size(397, 22);
             this.startDate.TabIndex = 1;
+            this.startDate.Value = new System.DateTime(2021, 6, 12, 0, 0, 0, 0);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 43);
+            this.label1.Location = new System.Drawing.Point(16, 53);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 29);
+            this.label1.Size = new System.Drawing.Size(258, 36);
             this.label1.TabIndex = 2;
             this.label1.Text = "COURSE NAME ";
             // 
@@ -68,9 +71,10 @@ namespace FekyTask.Forms
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 123);
+            this.label2.Location = new System.Drawing.Point(16, 151);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 29);
+            this.label2.Size = new System.Drawing.Size(100, 36);
             this.label2.TabIndex = 3;
             this.label2.Text = "COST";
             // 
@@ -78,9 +82,10 @@ namespace FekyTask.Forms
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 222);
+            this.label3.Location = new System.Drawing.Point(16, 273);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(212, 29);
+            this.label3.Size = new System.Drawing.Size(259, 36);
             this.label3.TabIndex = 4;
             this.label3.Text = "Session Duration";
             // 
@@ -88,9 +93,10 @@ namespace FekyTask.Forms
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 327);
+            this.label4.Location = new System.Drawing.Point(16, 402);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(249, 29);
+            this.label4.Size = new System.Drawing.Size(302, 36);
             this.label4.TabIndex = 5;
             this.label4.Text = "Number Of Students";
             // 
@@ -98,9 +104,10 @@ namespace FekyTask.Forms
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 447);
+            this.label5.Location = new System.Drawing.Point(16, 550);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(241, 29);
+            this.label5.Size = new System.Drawing.Size(290, 36);
             this.label5.TabIndex = 6;
             this.label5.Text = "Number Of Session";
             // 
@@ -108,9 +115,10 @@ namespace FekyTask.Forms
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 553);
+            this.label6.Location = new System.Drawing.Point(16, 681);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(128, 29);
+            this.label6.Size = new System.Drawing.Size(156, 36);
             this.label6.TabIndex = 7;
             this.label6.Text = "Start Date";
             // 
@@ -118,65 +126,74 @@ namespace FekyTask.Forms
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 636);
+            this.label7.Location = new System.Drawing.Point(16, 783);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 29);
+            this.label7.Size = new System.Drawing.Size(146, 36);
             this.label7.TabIndex = 8;
             this.label7.Text = "End Date";
             // 
             // endDate
             // 
             this.endDate.CalendarFont = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.endDate.Location = new System.Drawing.Point(267, 636);
+            this.endDate.Location = new System.Drawing.Point(356, 783);
+            this.endDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.endDate.Name = "endDate";
-            this.endDate.Size = new System.Drawing.Size(299, 20);
+            this.endDate.Size = new System.Drawing.Size(397, 22);
             this.endDate.TabIndex = 14;
+            this.endDate.Value = new System.DateTime(2021, 6, 12, 0, 0, 0, 0);
             // 
             // courseName
             // 
             this.courseName.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.courseName.Location = new System.Drawing.Point(267, 38);
+            this.courseName.Location = new System.Drawing.Point(356, 47);
+            this.courseName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.courseName.Name = "courseName";
-            this.courseName.Size = new System.Drawing.Size(461, 34);
+            this.courseName.Size = new System.Drawing.Size(613, 41);
             this.courseName.TabIndex = 15;
             // 
             // costBox
             // 
             this.costBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.costBox.Location = new System.Drawing.Point(267, 118);
+            this.costBox.Location = new System.Drawing.Point(356, 145);
+            this.costBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.costBox.Name = "costBox";
-            this.costBox.Size = new System.Drawing.Size(461, 34);
+            this.costBox.Size = new System.Drawing.Size(613, 41);
             this.costBox.TabIndex = 16;
             // 
             // sessionDuration
             // 
             this.sessionDuration.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sessionDuration.Location = new System.Drawing.Point(267, 217);
+            this.sessionDuration.Location = new System.Drawing.Point(356, 267);
+            this.sessionDuration.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sessionDuration.Name = "sessionDuration";
-            this.sessionDuration.Size = new System.Drawing.Size(461, 34);
+            this.sessionDuration.Size = new System.Drawing.Size(613, 41);
             this.sessionDuration.TabIndex = 17;
             // 
             // NumOfStudents
             // 
             this.NumOfStudents.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NumOfStudents.Location = new System.Drawing.Point(267, 322);
+            this.NumOfStudents.Location = new System.Drawing.Point(356, 396);
+            this.NumOfStudents.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NumOfStudents.Name = "NumOfStudents";
-            this.NumOfStudents.Size = new System.Drawing.Size(461, 34);
+            this.NumOfStudents.Size = new System.Drawing.Size(613, 41);
             this.NumOfStudents.TabIndex = 18;
             // 
             // numOfSession
             // 
             this.numOfSession.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numOfSession.Location = new System.Drawing.Point(267, 442);
+            this.numOfSession.Location = new System.Drawing.Point(356, 544);
+            this.numOfSession.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numOfSession.Name = "numOfSession";
-            this.numOfSession.Size = new System.Drawing.Size(461, 34);
+            this.numOfSession.Size = new System.Drawing.Size(613, 41);
             this.numOfSession.TabIndex = 19;
             // 
             // AddBTN
             // 
-            this.AddBTN.Location = new System.Drawing.Point(815, 612);
+            this.AddBTN.Location = new System.Drawing.Point(1087, 753);
+            this.AddBTN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddBTN.Name = "AddBTN";
-            this.AddBTN.Size = new System.Drawing.Size(164, 44);
+            this.AddBTN.Size = new System.Drawing.Size(219, 54);
             this.AddBTN.TabIndex = 20;
             this.AddBTN.Text = "Add";
             this.AddBTN.UseVisualStyleBackColor = true;
@@ -184,9 +201,9 @@ namespace FekyTask.Forms
             // 
             // AddNewCourse
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1075, 694);
+            this.ClientSize = new System.Drawing.Size(1433, 854);
             this.Controls.Add(this.AddBTN);
             this.Controls.Add(this.numOfSession);
             this.Controls.Add(this.NumOfStudents);
@@ -202,6 +219,7 @@ namespace FekyTask.Forms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.startDate);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddNewCourse";
             this.Text = "AddNewCourse";
             this.Load += new System.EventHandler(this.AddNewCourse_Load);

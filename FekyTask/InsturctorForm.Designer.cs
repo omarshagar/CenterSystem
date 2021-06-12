@@ -48,8 +48,9 @@
             this.menuPanle.Controls.Add(this.logoPanle);
             this.menuPanle.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuPanle.Location = new System.Drawing.Point(0, 0);
+            this.menuPanle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.menuPanle.Name = "menuPanle";
-            this.menuPanle.Size = new System.Drawing.Size(220, 682);
+            this.menuPanle.Size = new System.Drawing.Size(293, 839);
             this.menuPanle.TabIndex = 0;
             // 
             // addCourseBYN
@@ -59,9 +60,10 @@
             this.addCourseBYN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.addCourseBYN.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addCourseBYN.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.addCourseBYN.Location = new System.Drawing.Point(0, 239);
+            this.addCourseBYN.Location = new System.Drawing.Point(0, 295);
+            this.addCourseBYN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.addCourseBYN.Name = "addCourseBYN";
-            this.addCourseBYN.Size = new System.Drawing.Size(220, 50);
+            this.addCourseBYN.Size = new System.Drawing.Size(293, 62);
             this.addCourseBYN.TabIndex = 3;
             this.addCourseBYN.Text = "Add Course";
             this.addCourseBYN.UseVisualStyleBackColor = true;
@@ -74,9 +76,10 @@
             this.viewCourseBTN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.viewCourseBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewCourseBTN.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.viewCourseBTN.Location = new System.Drawing.Point(0, 189);
+            this.viewCourseBTN.Location = new System.Drawing.Point(0, 233);
+            this.viewCourseBTN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.viewCourseBTN.Name = "viewCourseBTN";
-            this.viewCourseBTN.Size = new System.Drawing.Size(220, 50);
+            this.viewCourseBTN.Size = new System.Drawing.Size(293, 62);
             this.viewCourseBTN.TabIndex = 2;
             this.viewCourseBTN.Text = "View Course";
             this.viewCourseBTN.UseVisualStyleBackColor = true;
@@ -89,9 +92,10 @@
             this.instInfoBTN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.instInfoBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.instInfoBTN.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.instInfoBTN.Location = new System.Drawing.Point(0, 139);
+            this.instInfoBTN.Location = new System.Drawing.Point(0, 171);
+            this.instInfoBTN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.instInfoBTN.Name = "instInfoBTN";
-            this.instInfoBTN.Size = new System.Drawing.Size(220, 50);
+            this.instInfoBTN.Size = new System.Drawing.Size(293, 62);
             this.instInfoBTN.TabIndex = 1;
             this.instInfoBTN.Text = "Information";
             this.instInfoBTN.UseVisualStyleBackColor = true;
@@ -102,8 +106,9 @@
             this.logoPanle.Controls.Add(this.instLable);
             this.logoPanle.Dock = System.Windows.Forms.DockStyle.Top;
             this.logoPanle.Location = new System.Drawing.Point(0, 0);
+            this.logoPanle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logoPanle.Name = "logoPanle";
-            this.logoPanle.Size = new System.Drawing.Size(220, 139);
+            this.logoPanle.Size = new System.Drawing.Size(293, 171);
             this.logoPanle.TabIndex = 0;
             // 
             // instLable
@@ -111,29 +116,33 @@
             this.instLable.AutoSize = true;
             this.instLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.instLable.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.instLable.Location = new System.Drawing.Point(12, 28);
+            this.instLable.Location = new System.Drawing.Point(16, 34);
+            this.instLable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.instLable.Name = "instLable";
-            this.instLable.Size = new System.Drawing.Size(158, 39);
+            this.instLable.Size = new System.Drawing.Size(195, 48);
             this.instLable.TabIndex = 0;
             this.instLable.Text = "Instructor";
             // 
             // mainPanle
             // 
             this.mainPanle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanle.Location = new System.Drawing.Point(220, 0);
+            this.mainPanle.Location = new System.Drawing.Point(293, 0);
+            this.mainPanle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.mainPanle.Name = "mainPanle";
-            this.mainPanle.Size = new System.Drawing.Size(983, 682);
+            this.mainPanle.Size = new System.Drawing.Size(1311, 839);
             this.mainPanle.TabIndex = 2;
             // 
             // InsturctorForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1203, 682);
+            this.ClientSize = new System.Drawing.Size(1604, 839);
             this.Controls.Add(this.mainPanle);
             this.Controls.Add(this.menuPanle);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "InsturctorForm";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.InsturctorForm_Load);
             this.menuPanle.ResumeLayout(false);
             this.logoPanle.ResumeLayout(false);
             this.logoPanle.PerformLayout();

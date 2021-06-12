@@ -71,5 +71,10 @@ namespace FekyTask
         {
             openChildForm(new Forms.AddNewCourse(instID), (Button)sender);
         }
+
+        private void InsturctorForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

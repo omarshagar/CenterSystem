@@ -59,7 +59,9 @@ namespace FekyTask.Forms
         }
         private void addCourseToClass()
         {
-           
+            this.CourseInfo.setStartDate(startDate.Value);
+            this.CourseInfo.setEndDate(endDate.Value);
+
             foreach (Control control in this.Controls)
             {
                 if(control.GetType() == typeof(TextBox))
@@ -68,9 +70,25 @@ namespace FekyTask.Forms
                     if (!CourseAddingMethods[(string)textBox.Name](textBox.Text))
                     {
                         MessageBox.Show("Please enter the values in the right format");
+                        return;
                     }
                 }
             }
+
+            if (CourseInfo.getStartDate().CompareTo(DateTime.Now) < 0)
+            {
+                MessageBox.Show("You Cant start course in past");
+                return;
+            }
+
+            if (CourseInfo.getEndDate().CompareTo(CourseInfo.getStartDate())<0)
+            {
+                MessageBox.Show("Please enter correct dates");
+                return;
+            }
+
+            SelectTimeForm sf = new SelectTimeForm(this.instID,this.CourseInfo);
+            sf.ShowDialog();
         }
         private void AddBTN_Click(object sender, EventArgs e)
         {

@@ -11,7 +11,9 @@ namespace FekyTask.helperClasses
 {
     class InstructorInfo
     {
-        string ord = "data source=orcl1;user id=feky;password=ykef;";
+        //string ord = "data source=orcl1;user id=feky;password=ykef;";
+        string ord = "data source=orcl4;user id=scott;password=tiger;";
+
         OracleConnection conn;
         public int InstID, BALANCE, hour;
         public string fullName, EMAIL, MOBILE_NUMBER;
