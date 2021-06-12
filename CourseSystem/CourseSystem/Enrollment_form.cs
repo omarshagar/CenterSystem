@@ -272,6 +272,11 @@ namespace CourseSystem
 
         private void save_Click(object sender, EventArgs e)
         {
+           if ( this.num_of_student.Text =='0'.ToString())
+            {
+                MessageBox.Show("Sorry, This Course has Full Capacity!");
+                return;
+            }
             DialogResult dial = MessageBox.Show("Are you sure that you want to enroll in this course ?", "Enroll", MessageBoxButtons.YesNo);
             if (dial == DialogResult.Yes)
             {
@@ -284,7 +289,8 @@ namespace CourseSystem
                     DataTable info2 = new DataTable();
                     info2 = retreve_selectdata_from_database_one_bind("select balance from instructor where instructor_id=:inst", this.instr_id);
                     int finalinstrbalance = int.Parse(info2.Rows[0][0].ToString()) + int.Parse(this.cost.Text);
-                    int finalnumstudforcourse = int.Parse(this.num_of_student.Text) + 1;
+                    int finalnumstudforcourse = int.Parse(this.num_of_student.Text) - 1;
+                   
 
                     update("update  student set balance=:finalstudbalance where student_id=:stud_id", finalstudbalance.ToString(), stud_id.ToString());
                     update("update  instructor set balance=:finalinstrbalance where instructor_id=:instr_id", finalinstrbalance.ToString(), instr_id);

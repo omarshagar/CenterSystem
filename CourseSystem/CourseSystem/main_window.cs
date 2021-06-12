@@ -145,7 +145,7 @@ namespace CourseSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UpdateForm uf = new UpdateForm(stud_id);
+            UpdateForm uf = new UpdateForm(stud_id, 's');
             uf.ShowDialog();
         }
 

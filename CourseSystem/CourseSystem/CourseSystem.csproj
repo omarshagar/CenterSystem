@@ -69,17 +69,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCourse.cs" />
+    <Compile Include="AddNewCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewCourse.designer.cs">
+      <DependentUpon>AddNewCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CourseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CourseInfo.designer.cs">
+      <DependentUpon>CourseInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="courses_not_enrollment_form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="courses_not_enrollment_form.designer.cs">
       <DependentUpon>courses_not_enrollment_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrystalReportInstructor.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportInstructor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Enrollment_form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Enrollment_form.designer.cs">
       <DependentUpon>Enrollment_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\BaseForm.cs">
       <SubType>Form</SubType>
@@ -104,6 +129,19 @@
     </Compile>
     <Compile Include="Forms\MainForm.designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information.designer.cs">
+      <DependentUpon>Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorInfo.cs" />
+    <Compile Include="InsturctorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsturctorForm.designer.cs">
+      <DependentUpon>InsturctorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="main_window.cs">
       <SubType>Form</SubType>
@@ -162,6 +200,12 @@
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ResManager.cs" />
+    <Compile Include="SelectTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectTimeForm.designer.cs">
+      <DependentUpon>SelectTimeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -186,11 +230,24 @@
     <Compile Include="UserControlStud.designer.cs">
       <DependentUpon>UserControlStud.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddNewCourse.resx">
+      <DependentUpon>AddNewCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseInfo.resx">
+      <DependentUpon>CourseInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="courses_not_enrollment_form.resx">
       <DependentUpon>courses_not_enrollment_form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportInstructor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportInstructor.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Enrollment_form.resx">
       <DependentUpon>Enrollment_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
@@ -203,6 +260,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information.resx">
+      <DependentUpon>Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsturctorForm.resx">
+      <DependentUpon>InsturctorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main_window.resx">
       <DependentUpon>main_window.cs</DependentUpon>
@@ -240,6 +303,9 @@
     </Compile>
     <EmbeddedResource Include="Forms\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectTimeForm.resx">
+      <DependentUpon>SelectTimeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

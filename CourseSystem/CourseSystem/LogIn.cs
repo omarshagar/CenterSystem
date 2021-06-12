@@ -141,7 +141,10 @@ namespace CourseSystem
                         myPassword = cmd.Parameters[1].Value.ToString();
                         if (myPassword.Equals(passwordtxt1.Password))
                         {
-                            MessageBox.Show("LOGGED IN");
+                            FekyTask.InsturctorForm inf = new FekyTask.InsturctorForm(myid);
+                            this.Hide();
+                            inf.ShowDialog();
+                            this.Close();
                         }
                         else
                         {

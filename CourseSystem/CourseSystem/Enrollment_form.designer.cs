@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.course_name = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.course_name = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -83,6 +83,17 @@
             this.panel2.Size = new System.Drawing.Size(918, 553);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // course_name
+            // 
+            this.course_name.Font = new System.Drawing.Font("Microsoft Tai Le", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.course_name.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.course_name.Location = new System.Drawing.Point(245, 202);
+            this.course_name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.course_name.Name = "course_name";
+            this.course_name.Size = new System.Drawing.Size(244, 30);
+            this.course_name.TabIndex = 50;
+            this.course_name.Text = "label4";
             // 
             // label7
             // 
@@ -118,17 +129,17 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(39, 473);
+            this.label4.Location = new System.Drawing.Point(23, 386);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 44);
+            this.label4.Size = new System.Drawing.Size(195, 31);
             this.label4.TabIndex = 45;
             this.label4.Text = "Number of Sessions";
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(61, 421);
+            this.label3.Location = new System.Drawing.Point(85, 328);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 30);
@@ -137,19 +148,20 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 326);
+            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label2.Location = new System.Drawing.Point(785, 19);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 55);
+            this.label2.Size = new System.Drawing.Size(103, 27);
             this.label2.TabIndex = 43;
-            this.label2.Text = "Number of Students Enrolled";
+            this.label2.Text = "Spots Left";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(37, 263);
+            this.label1.Location = new System.Drawing.Point(60, 263);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 30);
@@ -159,7 +171,7 @@
             // Course
             // 
             this.Course.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Course.Location = new System.Drawing.Point(23, 202);
+            this.Course.Location = new System.Drawing.Point(47, 202);
             this.Course.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Course.Name = "Course";
             this.Course.Size = new System.Drawing.Size(150, 30);
@@ -198,7 +210,7 @@
             // 
             this.start_date.Font = new System.Drawing.Font("Microsoft Tai Le", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.start_date.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.start_date.Location = new System.Drawing.Point(183, 263);
+            this.start_date.Location = new System.Drawing.Point(245, 263);
             this.start_date.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.start_date.Name = "start_date";
             this.start_date.Size = new System.Drawing.Size(244, 32);
@@ -210,36 +222,39 @@
             // 
             this.num_of_student.Font = new System.Drawing.Font("Microsoft Tai Le", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num_of_student.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.num_of_student.Location = new System.Drawing.Point(194, 349);
+            this.num_of_student.Location = new System.Drawing.Point(729, 19);
             this.num_of_student.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.num_of_student.Name = "num_of_student";
-            this.num_of_student.Size = new System.Drawing.Size(75, 32);
+            this.num_of_student.Size = new System.Drawing.Size(61, 27);
             this.num_of_student.TabIndex = 36;
             this.num_of_student.Text = "label1";
+            this.num_of_student.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.num_of_student.Click += new System.EventHandler(this.num_of_student_Click);
             // 
             // cost
             // 
             this.cost.Font = new System.Drawing.Font("Microsoft Tai Le", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cost.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.cost.Location = new System.Drawing.Point(194, 421);
+            this.cost.Location = new System.Drawing.Point(239, 328);
             this.cost.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cost.Name = "cost";
             this.cost.Size = new System.Drawing.Size(75, 32);
             this.cost.TabIndex = 35;
             this.cost.Text = "label1";
+            this.cost.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.cost.Click += new System.EventHandler(this.cost_Click);
             // 
             // numofsessions
             // 
             this.numofsessions.Font = new System.Drawing.Font("Microsoft Tai Le", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numofsessions.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.numofsessions.Location = new System.Drawing.Point(194, 488);
+            this.numofsessions.Location = new System.Drawing.Point(242, 390);
             this.numofsessions.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.numofsessions.Name = "numofsessions";
             this.numofsessions.Size = new System.Drawing.Size(69, 32);
-            this.numofsessions.TabIndex = 34;
+            this.numofsessions.TabIndex = 35;
             this.numofsessions.Text = "label1";
+            this.numofsessions.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.numofsessions.Click += new System.EventHandler(this.numofsessions_Click);
             // 
             // duration_of_one_session
@@ -299,17 +314,6 @@
             this.panel1.Size = new System.Drawing.Size(991, 102);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // course_name
-            // 
-            this.course_name.Font = new System.Drawing.Font("Microsoft Tai Le", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.course_name.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.course_name.Location = new System.Drawing.Point(183, 202);
-            this.course_name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.course_name.Name = "course_name";
-            this.course_name.Size = new System.Drawing.Size(244, 30);
-            this.course_name.TabIndex = 50;
-            this.course_name.Text = "label4";
             // 
             // Enrollment_form
             // 

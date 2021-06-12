@@ -97,7 +97,6 @@ C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem
 C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem\bin\Debug\stdole.dll
-C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.csprojAssemblyReference.cache
 C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Forms.BaseForm.resources
 C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.Controls.BIcon.resources
 C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.UI.Check_Admin.resources
@@ -122,3 +121,10 @@ C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem
 C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.main_form.resources
 C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.UserControlStud.resources
 C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.UpdateForm.resources
+C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem\obj\Debug\FekyTask.Forms.AddNewCourse.resources
+C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem\obj\Debug\FekyTask.Forms.CourseInfo.resources
+C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem\obj\Debug\FekyTask.Form1.resources
+C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem\obj\Debug\FekyTask.Forms.Information.resources
+C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem\obj\Debug\FekyTask.InsturctorForm.resources
+C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem\obj\Debug\FekyTask.SelectTimeForm.resources
+C:\Users\Family\Desktop\DATABASE\Version1\CenterSystem\CourseSystem\CourseSystem\obj\Debug\CourseSystem.csprojAssemblyReference.cache
